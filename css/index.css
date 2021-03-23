@@ -201,7 +201,7 @@
   -o-border-radius: 10px;
 }
 
-.social__item {
+.header__social-item {
   width: 35px;
   height: 35px;
   background-color: white;
@@ -634,23 +634,121 @@
   width: 100%;
 }
 
-
-
-
-
 /* end instagram */
 
 
+
+
+/* start footer */
+
 .footer__top {
-  width: 100%;
+  width: 100vw;
   height: 370px;
   background-color: #f6ab3b;
+  display: flex;
+  justify-content: space-around;
+  align-items:center;
 }
 
+.footer__title {
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 1.54;
+  letter-spacing: -0.52px;
+}
+
+.footer__info-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer__info-link {
+  font-family: Muli-Bold;
+  font-size: 18px;
+  line-height: 1.94;
+  letter-spacing: -0.36px;
+  color: #6d450c;
+}
+
+.footer__payment-container {
+  width: 270px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer__payment-img {
+  margin: 0 20px 20px 0;
+}
+
+.form-mail__input {
+  width: 495px;
+  height: 60px;
+  border-radius: 30px;
+  border-style: none;
+  background-image: url(../assets/images/footer__mail.png);
+  background-repeat: no-repeat;
+  background-position: 20px center;
+  text-align: center;
+  font-size: 17px;
+  font-family: Muli-Bold;
+  line-height: 2.06;
+  letter-spacing: -0.34px;
+  color: #6d450c;
+}
+
+.form-mail__input:focus { 
+  outline: none !important;
+}
+
+.footer__mail-btn {  
+  font-family: Muli-Bold;
+  border-style: none;
+  background-color: #f6ab3b;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 2.22;
+  letter-spacing: -0.36px;
+  color: #6d450c;
+  text-transform: uppercase;
+  margin-top: 15px;
+  padding-left: 20px;
+}
+
+.footer__social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 120px;
+}
+
+.footer__social-list {
+  display: flex;
+  list-style: none;
+}
+
+.footer__social-item {
+  margin-right: 30px;
+}
 
 
 .footer-bottom {
-  width: 100%;
+  width: 100vw;
   height: 60px;
   background-color: #6c2c1c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.footer-bottom-rights {
+  font-family: Muli-Regular;
+  font-size: 14px;
+  line-height: 2.69;
+  text-align: center;
+  color: #af8a82;
+}
+
+
+
+
+/* end footer */
