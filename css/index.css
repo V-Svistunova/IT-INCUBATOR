@@ -47,6 +47,18 @@
   background-color: #14826f;
 }
 
+.btn--brown {
+  background-color: #632b17;
+}
+
+.btn--yellow {
+  background-color: #f7ae3b;
+}
+
+.btn--orange {
+  background-color: #c3471b;
+}
+
 
 .title {
   font-family: Muli-ExtraBold;
@@ -80,6 +92,25 @@
 .item {    
   font-family: Muli-Regular;
 }
+
+
+.block--brown {
+  background-color: #632b17;
+}
+
+.block--dark-green {
+  background-color: #178670;
+}
+
+.block--yellow {
+  background-color: #f7ae3b;
+}
+
+.block--orange {
+  background-color: #c3471b;
+}
+
+
 
 /*Start header*/
 
@@ -289,6 +320,7 @@
 .about__block-img {
   margin: 0 auto;
   padding: 0 20px;
+  position: relative;
 }
 
 .about__content {
@@ -338,15 +370,54 @@
   -o-border-radius: 30px;
 } 
 
-
-
 /* end about */
 
 
+
+
+/* start products */
+
 .products {
-  width: 100%;
+  display: flex;
+  width: 100vw;
   height: 720px;
 }
+
+.products__block {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 120px;
+}
+
+.products__title {
+  font-family: Muli-Bold;
+  font-size: 24px;
+  line-height: 0.92;
+  text-align: center;
+}
+
+.products__volume {
+  font-family: Muli-Italic;
+  font-size: 21px;
+  line-height: 1.52;
+  color: white;
+}
+
+.products__btn {
+  text-transform:capitalize;
+  width: 204px;
+  height: 60px;
+  margin-top: 65px;
+  border-radius: 30px;
+  border: solid 2px #ffffff;
+  color: #ffffff;
+}
+
+
+
+/* end products */
 
 
 
