@@ -245,7 +245,7 @@
 .smoothies {
   width: 100vw;
   height: 870px;
-  background-color: #fffff;
+  background-color: white;
   display: flex;
   flex-direction: column;
 }
@@ -415,16 +415,45 @@
   color: #ffffff;
 }
 
-
-
 /* end products */
 
 
 
+/* start story */
+
 .story {
-  width: 100%;
+  width: 100vw;
   height: 880px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.story__title {
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 0.8;
+  letter-spacing: -1px;
+}
+
+.story__text {
+  width: 510px;
+  font-size: 18px;
+  line-height: 1.94;
+}
+
+.story__btn {
+  width: 301px;
+  height: 60px;
+  margin-top: 60px;
+  border-radius: 30px;
+  color: white;
+  font-size: 21px;
+  line-height: 1.05;
+}
+
+
+/* end story */
 
 
 .reviews {
