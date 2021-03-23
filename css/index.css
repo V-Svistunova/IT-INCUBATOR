@@ -517,14 +517,80 @@
   -o-transform: rotateX(90teg);
 }
 
-
 /* end reviews */
 
 
+
+/* start reviews */
+
 .blog {
-  width: 100%;
-  height: 800px;
+  width: 100vw;
+  height: 800px;  
 }
+
+.blog__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blog__title {
+  margin: 100px 0 50px 100px;
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 0.8;
+  letter-spacing: -1px;
+}
+
+.blog__content {
+  width: 690px;
+}
+
+.blog__content-line {
+  width: 690px;
+  height: 10px;
+  background-color: #f7ae3b;
+}
+
+.blog__content-title {
+  margin-left: 60px;
+  margin-bottom: 0;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 1.33;
+  letter-spacing: -0.6px;
+}
+
+.blog__content-data {
+  margin-left: 60px;
+  font-size: 16px;
+  line-height: 2.19;
+  color: #1e1e1e;
+  font-family: Muli-Regular;
+}
+
+.blog__content-text {
+  margin-left: 120px;
+  width: 470px;
+  font-size: 18px;
+  line-height: 1.94;
+}
+
+.blog__content-btn {
+  font-weight: 800;
+  font-family: Muli-Italic;
+  background-color: white;
+  border-style: none;
+}
+
+.btn__arrow {
+  width: 20px;
+  margin-left: 5px;
+}
+
+
+
+/* end blog */
 
 
 
