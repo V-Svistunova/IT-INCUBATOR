@@ -28,6 +28,38 @@
   src: url(../assets/fonts/Muli-Semi-BoldItalic.ttf); 
 }
 
+/* start: Fix button - arrow top*/
+
+.fix-btn {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 100px;
+}
+
+.fix-btn__name {
+  font-family: Muli-Bold;
+  font-size: 16px;
+  line-height: 2.5;
+  color: #ffffff;
+}
+
+.fix-btn__arrow {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: #f2662f;
+}
+
+.fix-btn__arrow-img {
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+}
+
+/* end: Fix button - arrow top*/
+
 
 
 .btn {
@@ -212,14 +244,14 @@
   -o-border-radius: 18px;
 }
 
+.header__social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
 .social__icon {
   display: block;
   margin: auto;
   padding-top: 8px;
-}
-
-.social__item:not(:last-child) {
-  margin-right: 10px;
 }
 
 .header__content {
@@ -650,6 +682,12 @@
   align-items:center;
 }
 
+.footer__container {
+  width: 1000px;
+  display: flex;
+  justify-content: space-between;
+}
+
 .footer__title {
   font-size: 26px;
   font-weight: 800;
@@ -730,7 +768,6 @@
   margin-right: 30px;
 }
 
-
 .footer-bottom {
   width: 100vw;
   height: 60px;
@@ -747,8 +784,5 @@
   text-align: center;
   color: #af8a82;
 }
-
-
-
 
 /* end footer */
