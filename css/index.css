@@ -667,6 +667,7 @@
 /* start story */
 
 .story {
+  position: relative;
   width: 100vw;
   height: 880px;
   display: flex;
@@ -688,6 +689,10 @@
 }
 
 .story__btn {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 40px;
   width: 301px;
   height: 60px;
   margin-top: 60px;
@@ -695,6 +700,36 @@
   color: white;
   font-size: 21px;
   line-height: 1.05;
+}
+
+.story__btn::after {
+  position: absolute;
+  top: 30%;
+  right: 10%;
+  content: ".";
+  width: 30px;
+  color:transparent;
+  background-image:url(../assets/images/Arrow-orange.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.story__container {
+  position: relative;
+  margin-left: 200px;
+}
+
+.story__container::before {
+  position: absolute;
+  content: ".";
+  width: 290px;
+  height: 220px;
+  top: 20px;
+  left: -170px;
+  color:transparent;
+  background-image:url(../assets/images/story__img-text.png);
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 /* end story */
