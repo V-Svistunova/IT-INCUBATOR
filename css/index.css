@@ -94,7 +94,7 @@
 }
 
 .btn:focus {
-  outline: 2px solid rgb(54, 54, 54);
+  outline: 1px solid rgb(12, 12, 12);
 }
 
 .btn:hover{
@@ -817,18 +817,15 @@
 
 .blog {
   width: 100vw;
-  height: 800px;  
-}
-
-.blog__container {
+  height: 100vh;
+  max-height: 800px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items:center  
 }
 
 .blog__title {
-  padding-top: 100px;
-  margin: 0 0 50px 100px;
+  margin-top: -100px;
   font-size: 50px;
   font-weight: 800;
   line-height: 0.8;
@@ -840,18 +837,31 @@
 }
 
 .blog__content-line {
-  width: 690px;
-  height: 10px;
-  background-color: #f7ae3b;
+  
 }
 
 .blog__content-title {
-  margin-left: 60px;
-  margin-bottom: 0;
+  position: relative;
+  margin: 60px 0 0 60px;
   font-size: 30px;
   font-weight: 800;
   line-height: 1.33;
   letter-spacing: -0.6px;
+}
+
+.blog__content-title::before {
+  position: absolute;
+  content: "";
+  width: 630px;
+  height: 12px;
+  background-color: #f7ae3b;
+  top: -50px;
+  left: -62px;
+  border-radius: 0 6px 6px 0;
+  -webkit-border-radius: 0 6px 6px 0;
+  -moz-border-radius: 0 6px 6px 0;
+  -ms-border-radius: 0 6px 6px 0;
+  -o-border-radius: 0 6px 6px 0;
 }
 
 .blog__content-data {
@@ -870,10 +880,23 @@
 }
 
 .blog__content-btn {
+  position: relative;
   font-weight: 800;
   font-family: Muli-Italic;
   background-color: white;
   border-style: none;
+}
+
+.blog__content-btn::after {
+  position: absolute;
+  top: 20%;
+  right: -35px;
+  content: ".";
+  width: 28px;
+  color:transparent;
+  background-image:url(../assets/images/Arrow-orange.png);
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .btn__arrow {
