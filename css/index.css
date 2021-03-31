@@ -28,12 +28,22 @@
   src: url(../assets/fonts/Muli-Semi-BoldItalic.ttf); 
 }
 
+
+
+
+.body {
+  position: relative;
+}
+
+
+
 /* start: Fix button - arrow top*/
 
 .fix-btn {
+  position: fixed;
+  right: 100px;
+  bottom: 15px;
   display: flex;
-  justify-content: flex-end;
-  margin-right: 100px;
 }
 
 .fix-btn__name {
@@ -41,6 +51,9 @@
   font-size: 16px;
   line-height: 2.5;
   color: #ffffff;
+  padding-right: 15px;
+  padding-top: 40px;
+  text-shadow: 1px 1px 5px #1e1e1e, 0 0 5px #1e1e1e;
 }
 
 .fix-btn__arrow {
@@ -62,13 +75,38 @@
 
 
 
+
+/* start button */
+
 .btn {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border-style: none;
-  font-family: Muli-Regular;  
+  outline: none;
+  font-family: Muli-Regular;
   font-weight: 800;
+  border-style: none;
+  border-radius:; 30px;
+  -webkit-border-radius:;
+  -moz-border-radius:;
+  -ms-border-radius:;
+  -o-border-radius:;
+}
+
+.btn:focus {
+  outline: 2px solid rgb(54, 54, 54);
+}
+
+.btn:hover{
+  opacity: 0.7;
+  border: 1px double black;
+  outline: none;
+}
+
+.btn:active {
+  opacity: 0.9;
+  border: 2px inset white;
+  outline: none;
 }
 
 .btn--green {
@@ -91,6 +129,12 @@
   background-color: #c3471b;
 }
 
+/* end button */
+
+
+
+
+/* start title */
 
 .title {
   font-family: Muli-ExtraBold;
@@ -112,6 +156,12 @@
   color: white;
 }
 
+/* end title */
+
+
+
+
+/* start text */
 
 .text {  
   font-family: Muli-Regular;
@@ -125,6 +175,12 @@
   font-family: Muli-Regular;
 }
 
+/* end text */
+
+
+
+
+/* start block */
 
 .block--brown {
   background-color: #632b17;
@@ -142,22 +198,76 @@
   background-color: #c3471b;
 }
 
+/* end block */
+
+
+
+/* start link */
+
 .link {  
   text-decoration: none;
 }
+
+.link:visited {
+  box-shadow: 1px 1px 2px black;
+}
+
+.link:focus {
+  outline: 2px solid rgb(54, 54, 54);
+}
+
+.link:hover {
+  opacity: 0.6;
+  color: #c3471b;
+}
+
+.link:active {
+  opacity: 1;
+  color: #632b17;
+}
+
+/* end link */
+
+
+
+
+/* start social */
+
+.social:visited {
+  box-shadow: 1px 1px 2px black;
+}
+
+.social:focus {
+  outline: 2px solid rgb(54, 54, 54);
+}
+
+.social:hover {
+  opacity: 0.6;
+}
+
+.social:active {
+  opacity: 1;
+  border: 1px inset black;
+}
+
+/* end social */
+
 
 
 
 /*Start header*/
 
 .header {
-  width: 100vw; 
+  position: relative;
+  width: 100vw;
+  max-height: 1080px; 
   height: 100vh;
   background-image: url(../assets/images/main-img.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom;
   background-color: #f7ae3b;
+  z-index: 5;
 }
 
 .header__top,
@@ -169,8 +279,8 @@
 }
 
 .header__top {
-  padding-top: 60px;
-  justify-content:space-around;
+  padding: 70px 100px 0 100px;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -199,19 +309,37 @@
 }
 
 .header__logo {
-  width: 210px;  
-}
-
-.header__line {
-  width: 50px;
-  margin: 0 40px;
-  height: 1px;
-  background-color: white;
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
 }
 
 .header__personal-social {
+  width: 380px;
+  display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.header__top,
+.header__social,
+.personal__link-cart {
+  position: relative;
+}
+
+.header__social::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -80px;
+  width: 50px;
+  height: 1px;
+  background-color: white;
 }
 
 .personal__item:not(:last-child) {
@@ -219,11 +347,14 @@
 }
 
 .personal__cart-count {
+  position: absolute;
+  top: -25px;
   width: 20px;
   height: 20px;
+  text-align: center;
   font-family: Muli;
-  font-size: 10px;
-  line-height: 4;
+  font-size: 14px;
+  line-height: 1.5;
   color: black;
   background-color: white;
   border-radius: 10px;
@@ -234,8 +365,8 @@
 }
 
 .header__social-item {
-  width: 35px;
-  height: 35px;
+  width: 34px;
+  height: 34px;
   background-color: white;
   border-radius: 18px;
   -webkit-border-radius: 18px;
@@ -250,8 +381,7 @@
 
 .social__icon {
   display: block;
-  margin: auto;
-  padding-top: 8px;
+  margin: 8px auto;
 }
 
 .header__content {
@@ -262,12 +392,31 @@
 }
 
 .header__btn {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 40px;
   width: 280px;
   height: 70px;
   border-radius: 35px;
   font-size: 24px;
   line-height: 1.67;
   color: #ffffff;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  -ms-border-radius: 35px;
+  -o-border-radius: 35px;
+}
+
+.header__btn::after {
+  position: absolute;
+  top: 20%;
+  right: 10%;
+  content: "100";
+  color:transparent;
+  background-image:url(../assets/images/Arrow.png);
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 
@@ -280,7 +429,8 @@
 
 .smoothies {
   width: 100vw;
-  height: 870px;
+  height: 100vh;
+  max-height: 870px;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -344,31 +494,37 @@
 
 .about {
   width: 100vw;
-  height: 800px;
+  height: 100vh;
+  max-height: 800px;
   background-color: #14826f;
   display: flex;
+  align-items: center;
 }
 
 .about__block {
-  margin-top: 65px;
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
 }
 
 .about__block-img {
-  margin: 0 auto;
-  padding: 0 20px;
   position: relative;
+  top: 75px;
 }
 
 .about__content {
+  flex-basis: 50%;
   width: 590px;
-  margin-top: 100px;
+  margin-left: 50px;
   display: flex;
   flex-direction: column;
   justify-content: left;
 }
 
 .about__content-title {
+  width: 600px;
   font-size: 55px;
+  margin-top: 0;
   font-weight: 800;
   line-height: 1.09;
   letter-spacing: -1.1px;
@@ -380,6 +536,8 @@
   font-weight: 800;
   line-height: 1.05;
   color: #ffffff;
+  padding: 0;
+  margin-left: 32px;
 }
 
 .about__content-item {
@@ -711,11 +869,14 @@
 .footer__payment-container {
   width: 270px;
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
 }
 
 .footer__payment-img {
-  margin: 0 20px 20px 0;
+  width: max-content;
+  height: max-content;
+  margin: 0 20px 30px 0;
 }
 
 .form-mail__input {
