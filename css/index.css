@@ -32,6 +32,7 @@
 
 
 .body {
+  max-width: 1950px;
   position: relative;
 }
 
@@ -260,8 +261,9 @@
 .header {
   position: relative;
   width: 100vw;
-  max-height: 1080px; 
   height: 100vh;
+  max-width: 1950px;
+  max-height: 1080px; 
   background-image: url(../assets/images/main-img.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -412,9 +414,10 @@
   position: absolute;
   top: 20%;
   right: 10%;
-  content: "100";
+  content: ".";
+  width: 30px;
   color:transparent;
-  background-image:url(../assets/images/Arrow.png);
+  background-image:url(../assets/images/Arrow-orange.png);
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -522,12 +525,25 @@
 }
 
 .about__content-title {
+  position: relative;
   width: 600px;
   font-size: 55px;
   margin-top: 0;
   font-weight: 800;
   line-height: 1.09;
   letter-spacing: -1.1px;
+}
+
+.about__content-title::after {
+  content: ".";
+  position: absolute;
+  width: 450px;
+  bottom: -35px;
+  left: 70px;
+  color:transparent;
+  background-image:url(../assets/images/about_line.png);
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .about__content-list {
@@ -550,6 +566,10 @@
 }
 
 .about__btn {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 40px;
   width: 380px;
   height: 60px;
   border-radius: 30px;
@@ -563,6 +583,19 @@
   -ms-border-radius: 30px;
   -o-border-radius: 30px;
 } 
+
+.about__btn::after {
+  position: absolute;
+  top: 30%;
+  right: 10%;
+  content: ".";
+  width: 30px;
+  color:transparent;
+  background-image:url(../assets/images/Arrow-orange.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
 
 /* end about */
 
