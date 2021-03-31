@@ -58,18 +58,24 @@
 }
 
 .fix-btn__arrow {
+  position: relative;
   width: 50px;
   height: 50px;
   border-radius: 5px;
   background-color: #f2662f;
 }
 
-.fix-btn__arrow-img {
-  transform: rotate(-90deg);
-  -webkit-transform: rotate(-90deg);
-  -moz-transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg);
-  -o-transform: rotate(-90deg);
+.fix-btn__arrow::after{
+  position: absolute;
+  top: 10px;
+  left: 18px;
+  content: ".";
+  width: 14px;
+  height: 28px;
+  color:transparent;
+  background-image:url(../assets/images/Arrow-top--white.png);
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 /* end: Fix button - arrow top*/
@@ -86,11 +92,6 @@
   font-family: Muli-Regular;
   font-weight: 800;
   border-style: none;
-  border-radius: 30px;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  -ms-border-radius: 30px;
-  -o-border-radius: 30px;
 }
 
 .btn:focus {
@@ -202,6 +203,14 @@
 
 
 
+
+.input:focus {
+  border: 2px solid rgb(0, 0, 0);
+  background-color: rgb(247, 236, 164);
+}
+
+
+
 /* start link */
 
 .link {  
@@ -219,6 +228,7 @@
 .link:hover {
   opacity: 0.6;
   color: #c3471b;
+  cursor: pointer;
 }
 
 .link:active {
@@ -913,20 +923,24 @@
   border-bottom: 5px solid white;
 }
 
-.instagram__title {
-  position: relative;
-  margin: 0 auto 45px;
-  width: 200px;
+.instagram__block {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.instagram__link {
+  position: relative;  
+  font-family: Muli-ExtraBold;
   font-size: 24px;
   font-weight: 800;
   line-height: 1.67;
   color: #0aa566;
 }
 
-.instagram__title::before {
+.instagram__link::before {
   position: absolute;
   content: ".";
-  top: 0;
+  top: -5px;
   left: -40px;
   width: 26px;
   color:transparent;
@@ -980,7 +994,7 @@
 }
 
 .footer__container {
-  width: 1000px;
+  width: 1100px;
   display: flex;
   justify-content: space-between;
 }
@@ -1039,6 +1053,7 @@
 }
 
 .footer__mail-btn {  
+  position: relative;
   font-family: Muli-Bold;
   border-style: none;
   background-color: #f6ab3b;
@@ -1049,7 +1064,20 @@
   color: #6d450c;
   text-transform: uppercase;
   margin-top: 15px;
-  padding-left: 20px;
+  margin-left: 20px;
+}
+
+.footer__mail-btn::before {
+  position: absolute;
+  content: ".";
+  top: -10px;
+  left: -50px;
+  width: 48px;
+  height: 48px;
+  color:transparent;
+  background-image:url(../assets/images/footer__Arrow.png);
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .footer__social {
