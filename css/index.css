@@ -81,17 +81,16 @@
 
 .btn {
   display: flex;
-  justify-content: space-around;
   align-items: center;
   outline: none;
   font-family: Muli-Regular;
   font-weight: 800;
   border-style: none;
-  border-radius:; 30px;
-  -webkit-border-radius:;
-  -moz-border-radius:;
-  -ms-border-radius:;
-  -o-border-radius:;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
 }
 
 .btn:focus {
@@ -739,13 +738,30 @@
 /* start reviews */
 
 .reviews {
+  position: relative;
   width: 100vw;
   height: 720px;
   display: flex;
   background-color: #672f1b;
+  background-image: url(../assets/images/reviews_sarah-a.png);
+  background-repeat: no-repeat;
+  background-position: 38% 45%;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+}
+
+.reviews::before {
+  position: absolute;
+  content: ".";
+  width: 410px;
+  height: 300px;
+  top: -85px;
+  right: 60px;
+  color:transparent;
+  background-image:url(../assets/images/reviews_dots.png);
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .reviews__title {
@@ -784,17 +800,13 @@
 }
 
 .reviews__arrow {
-  background-color: #672f1b;
-  border-style: none;
+  width: 160px;
+  display: flex;
+  justify-content: space-between;
 }
 
-.reviews__arrow-left {
-  margin-right: 100px;
-  transform: rotate(180deg);
-  -webkit-transform: rotateX(90teg);
-  -moz-transform: rotateX(90teg);
-  -ms-transform: rotateX(90teg);
-  -o-transform: rotateX(90teg);
+.reviews__arrow-btn {
+  background-color:#672f1b;
 }
 
 /* end reviews */
