@@ -1,39 +1,42 @@
 @font-face {
-  font-family: Muli-Bold; 
+  font-family: 'Muli-Bold'; 
   src: url(../assets/fonts/Muli-Bold.ttf); 
 }
 
 @font-face {
-  font-family: Muli-BoldItalic; 
+  font-family: 'Muli-BoldItalic'; 
   src: url(../assets/fonts/Muli-BoldItalic.ttf); 
 }
 
 @font-face {
-  font-family: Muli-ExtraBold; 
+  font-family: 'Muli-ExtraBold'; 
   src: url(../assets/fonts/Muli-ExtraBold.woff); 
 }
 
 @font-face {
-  font-family: Muli-Italic; 
+  font-family: 'Muli-Italic'; 
   src: url(../assets/fonts/Muli-Italic.ttf); 
 }
 
 @font-face {
-  font-family: Muli-Regular;
+  font-family: 'Muli-Regular';
   src: url(../assets/fonts/Muli-Regular.woff); 
 }
 
 @font-face {
-  font-family: Semi-BoldItalic; 
+  font-family: 'Semi-BoldItalic'; 
   src: url(../assets/fonts/Muli-Semi-BoldItalic.ttf); 
 }
 
 
-
+html {
+  font-size: 10px;
+}
 
 .body {
   max-width: 1950px;
   position: relative;
+  font-family: 'Muli-Regular', sans-serif;
 }
 
 
@@ -48,8 +51,8 @@
 }
 
 .fix-btn__name {
-  font-family: Muli-Bold;
-  font-size: 16px;
+  font-family: 'Muli-Bold';
+  font-size: 1.6rem;
   line-height: 2.5;
   color: #ffffff;
   padding-right: 15px;
@@ -89,8 +92,7 @@
   display: flex;
   align-items: center;
   outline: none;
-  font-family: Muli-Regular;
-  font-weight: 800;
+  font-family: 'Muli-ExtraBold';
   border-style: none;
 }
 
@@ -138,7 +140,7 @@
 /* start title */
 
 .title {
-  font-family: Muli-ExtraBold;
+  font-family: 'Muli-ExtraBold';
 } 
 
 .title--orange {
@@ -165,16 +167,17 @@
 /* start text */
 
 .text {  
-  font-family: Muli-Regular;
+  font-family: 'Muli-Regular';
+}
+
+.item {
+  font-family: 'Muli-Bold';
 }
 
 .text--black {
   color: #1e1e1e;
 }
 
-.item {    
-  font-family: Muli-Regular;
-}
 
 /* end text */
 
@@ -309,7 +312,7 @@
 }
 
 .header__list {
-  font-size: 14px;
+  font-size: 1.6rem;
   line-height: 2.5; 
   color: #ffffff;
   text-transform: uppercase;
@@ -363,8 +366,8 @@
   width: 20px;
   height: 20px;
   text-align: center;
-  font-family: Muli;
-  font-size: 14px;
+  font-family: 'Muli-Bold';
+  font-size: 1.4rem;
   line-height: 1.5;
   color: black;
   background-color: white;
@@ -410,7 +413,7 @@
   width: 280px;
   height: 70px;
   border-radius: 35px;
-  font-size: 24px;
+  font-size: 2.4rem;
   line-height: 1.67;
   color: #ffffff;
   -webkit-border-radius: 35px;
@@ -451,22 +454,21 @@
 .smoothies__title {
   margin-top: 100px;
   text-align: center;
-  font-size: 50px;
-  font-weight: 800;
+  font-size: 5.0rem;
   line-height: 0.8;
   letter-spacing: -1px;
 }
 
 .smoothies__text {
   width: 915px;
-  font-size: 18px;
+  font-size: 1.8rem;
   line-height: 1.94;
   text-align: center;
   margin: 0 auto;
 } 
 
 .smoothies__content {
-  width: 1000px;
+  width: 1100px;
   margin: 70px auto 0;
   display: flex;
   flex-wrap: wrap;
@@ -475,7 +477,7 @@
 }
 
 .smoothies__content-item {
-  width: 250px;
+  width: 270px;
   display: flex;
   flex-direction: column;
 }
@@ -488,10 +490,8 @@
   margin: 0 auto;
 }
 
-.smoothies__content-title{
-  font-family: Muli-Bold;
-  font-size: 25px;
-  font-weight: 800;
+.smoothies__content-title {
+  font-size: 2.5rem;
   line-height: 1.6;
   letter-spacing: -0.5px;
   text-align: center;
@@ -536,9 +536,8 @@
 .about__content-title {
   position: relative;
   width: 600px;
-  font-size: 55px;
+  font-size: 5.5rem;
   margin-top: 0;
-  font-weight: 800;
   line-height: 1.09;
   letter-spacing: -1.1px;
 }
@@ -557,10 +556,6 @@
 
 .about__content-list {
   list-style-image: url(../assets/images/about__marker.png);
-  font-size: 21px;
-  font-weight: 800;
-  line-height: 1.05;
-  color: #ffffff;
   padding: 0;
   margin-left: 32px;
 }
@@ -568,10 +563,13 @@
 .about__content-item {
   padding-left: 20px;
   margin-bottom: 20px;
+  font-size: 2.1rem;
+  line-height: 1.05;
+  color: #ffffff;
 }
 
 .about__content-text--thin {
-  font-weight: normal;
+  font-family: 'Muli-Regular';
 }
 
 .about__btn {
@@ -581,7 +579,7 @@
   width: 380px;
   height: 60px;
   color: #ffffff;
-  font-size: 21px;
+  font-size: 2.1rem;
   line-height: 1.05; 
   padding-left: 40px;
   border: solid 2px #f8b231;  
@@ -626,15 +624,15 @@
 }
 
 .products__title {
-  font-family: Muli-Bold;
-  font-size: 24px;
+  font-family: 'Muli-Bold';
+  font-size: 2.4rem;
   line-height: 0.92;
   text-align: center;
 }
 
 .products__volume {
-  font-family: Muli-Italic;
-  font-size: 21px;
+  font-family: 'Muli-Italic';
+  font-size: 2.1rem;
   line-height: 1.52;
   color: white;
 }
@@ -649,6 +647,8 @@
   height: 60px;
   margin-top: 65px;
   border: solid 2px #ffffff;
+  font-size: 2.1rem;
+  line-height: 1.05;
   color: #ffffff;
   border-radius: 30px;
   -webkit-border-radius: 30px;
@@ -659,7 +659,7 @@
 
 .products__btn::after {
   position: absolute;
-  top: 36%;
+  top: 16px;
   right: 15%;
   content: ".";
   width: 30px;
@@ -685,15 +685,14 @@
 }
 
 .story__title {
-  font-size: 50px;
-  font-weight: 800;
+  font-size: 5.0rem;
   line-height: 0.8;
   letter-spacing: -1px;
 }
 
 .story__text {
   width: 510px;
-  font-size: 18px;
+  font-size: 1.8rem;
   line-height: 1.94;
 }
 
@@ -707,7 +706,7 @@
   margin-top: 60px;
   border-radius: 30px;
   color: white;
-  font-size: 21px;
+  font-size: 2.1rem;
   line-height: 1.05;
 }
 
@@ -775,8 +774,7 @@
 }
 
 .reviews__title {
-  font-size: 50px;
-  font-weight: 800;
+  font-size: 5.0rem;
   line-height: 0.8;
   letter-spacing: -1px;
   text-align: center;
@@ -797,15 +795,16 @@
 }
 
 .reviews__block-text {
-  font-size: 18px;
+  font-size: 1.8rem;
   line-height: 1.94;
   color: #ffffff;
 }
 
 .reviews__block-cite {
   color: #f7ae3b;
-  font-family: Muli-Italic;
-  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 1.94;
+  font-family: 'Muli-BoldItalic';
   line-height: 2.5;
 }
 
@@ -836,8 +835,7 @@
 
 .blog__title {
   margin-top: -100px;
-  font-size: 50px;
-  font-weight: 800;
+  font-size: 5.0rem;
   line-height: 0.8;
   letter-spacing: -1px;
 }
@@ -849,8 +847,7 @@
 .blog__content-title {
   position: relative;
   margin: 60px 0 0 60px;
-  font-size: 30px;
-  font-weight: 800;
+  font-size: 3.0rem;
   line-height: 1.33;
   letter-spacing: -0.6px;
 }
@@ -872,23 +869,21 @@
 
 .blog__content-data {
   margin-left: 60px;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 2.19;
   color: #1e1e1e;
-  font-family: Muli-Regular;
 }
 
 .blog__content-text {
   margin-left: 120px;
   width: 470px;
-  font-size: 18px;
+  font-size: 1.8rem;
   line-height: 1.94;
 }
 
 .blog__content-btn {
   position: relative;
-  font-weight: 800;
-  font-family: Muli-Italic;
+  font-family: 'Muli-BoldItalic';
   background-color: white;
   border-style: none;
 }
@@ -930,9 +925,8 @@
 
 .instagram__link {
   position: relative;  
-  font-family: Muli-ExtraBold;
-  font-size: 24px;
-  font-weight: 800;
+  font-family: 'Muli-ExtraBold';
+  font-size: 2.4rem;
   line-height: 1.67;
   color: #0aa566;
 }
@@ -1000,8 +994,7 @@
 }
 
 .footer__title {
-  font-size: 26px;
-  font-weight: 800;
+  font-size: 2.6rem;
   line-height: 1.54;
   letter-spacing: -0.52px;
 }
@@ -1012,8 +1005,8 @@
 }
 
 .footer__info-link {
-  font-family: Muli-Bold;
-  font-size: 18px;
+  font-family: 'Muli-Bold';
+  font-size: 1.8rem;
   line-height: 1.94;
   letter-spacing: -0.36px;
   color: #6d450c;
@@ -1041,8 +1034,8 @@
   background-repeat: no-repeat;
   background-position: 20px center;
   text-align: center;
-  font-size: 17px;
-  font-family: Muli-Bold;
+  font-size: 1.7rem;
+  font-family: 'Muli-Bold';
   line-height: 2.06;
   letter-spacing: -0.34px;
   color: #6d450c;
@@ -1054,11 +1047,9 @@
 
 .footer__mail-btn {  
   position: relative;
-  font-family: Muli-Bold;
   border-style: none;
   background-color: #f6ab3b;
-  font-size: 18px;
-  font-weight: 800;
+  font-size: 1.8rem;
   line-height: 2.22;
   letter-spacing: -0.36px;
   color: #6d450c;
@@ -1106,8 +1097,8 @@
 }
 
 .footer-bottom-rights {
-  font-family: Muli-Regular;
-  font-size: 14px;
+  font-family: 'Muli-Regular';
+  font-size: 1.4rem;
   line-height: 2.69;
   text-align: center;
   color: #af8a82;
