@@ -703,7 +703,8 @@ html {
 .story {
   position: relative;
   width: 100vw;
-  height: 880px;
+  height: 100%;
+  max-height: 880px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1184,7 +1185,7 @@ html {
     justify-content: center;
     align-items:center;
     margin-left: 0;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
 
   /* end about */
@@ -1264,6 +1265,22 @@ html {
   /* end smoothies */
 
 
+/* start products */
+  .products {
+    overflow-x: scroll;
+    height: 100%;
+  }
+
+  .products__block {
+    min-width: 250px;
+    padding: 60px 0;
+  }
+  
+  .products__title {
+    margin: 10px;
+  }
+
+/* end products */  
 }
 
 
@@ -1394,6 +1411,13 @@ html {
     font-size: 1.6rem;
   }
 /* end about */
+
+
+/* start products */
+.products__img {
+  width: 40%;
+}
+/* start products */
 
 }
 
