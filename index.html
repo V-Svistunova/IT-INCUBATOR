@@ -12,7 +12,15 @@
 </head>
 <body class="body">
     <header class="header">
-        <div class="header__top">
+        <button class="header__burger-btn btn">
+            <img class="header__burger-img" src="./assets/images/header__burger-menu.png" alt="button_burger">
+        </button>        
+        <div class="header__logo logo">
+            <a class="logo__link link" href="">
+                <img class="logo__img" src="./assets/images/Logo.png" alt="">
+            </a>
+        </div>
+        <div class="header__top header__top-active">
             <nav class="header__menu">
                 <ul class="header__list">
                     <li class="header__item item">
@@ -35,11 +43,6 @@
                     </li>
                 </ul>
             </nav>
-            <div class="header__logo logo">
-                <a class="logo__link link" href="">
-                    <img class="logo__img" src="./assets/images/Logo.png" alt="">
-                </a>
-            </div>
             <div class="header__personal-social">
                 <div class="header__personal personal">
                     <ul class="personal__list">
@@ -110,7 +113,7 @@
             </div>
             <div class="smoothies__content-item">
             <img class="smoothies__content-img" src="./assets/images/smoothies__icon-gluten.png" alt="icon-gluten">
-            <h3 class="smoothies__content-title title title--orange">Gluten-Free</h3>
+            <h3 class="smoothies__content-title  title--orange">Gluten-Free</h3>
             </div>
         </div>
         <div class="smoothies__content">
@@ -324,6 +327,8 @@
         <span class="fix-btn__name">Go top</span>
         <button class="fix-btn__arrow btn"></button>
     </div>
+    
+    <script src="./js/intex.js"></script>
 </body>
 </html>
 

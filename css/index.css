@@ -292,6 +292,14 @@ html {
   display: flex;
 }
 
+.header__burger-btn {
+  display: none;
+  background-color: transparent;
+  position: relative;
+  top: 40px;
+  left: 30px;
+}
+
 .header__top {
   padding: 70px 100px 0 100px;
   justify-content: space-between;
@@ -324,7 +332,7 @@ html {
 
 .header__logo {
   position: absolute;
-  top: 46%;
+  top: 70px;
   left: 50%;
   transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
@@ -402,7 +410,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 110px;
+  padding-top: 110px;
 }
 
 .header__btn {
@@ -424,14 +432,20 @@ html {
 
 .header__btn::after {
   position: absolute;
-  top: 20%;
+  top: 50%;
   right: 10%;
   content: ".";
   width: 30px;
-  color:transparent;
+  height: 20px;
+  color: transparent;
   background-image:url(../assets/images/Arrow-orange.png);
   background-repeat: no-repeat;
   background-position: center center;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
 }
 
 
@@ -1105,3 +1119,101 @@ html {
 }
 
 /* end footer */
+
+
+
+
+
+/* start @media */
+
+@media (max-width: 1540px) {
+
+  .header__logo {
+    top: 30px;
+  }
+
+  .header__top {
+    padding: 20px 20px 0 20px;
+  }
+
+  .header__item:not(:last-child) {
+    margin-right: 15px;
+  }
+
+}
+
+
+
+
+@media (max-width: 1200px) {
+  
+  .header__top {
+    display: none;
+  }
+
+  .header__burger-btn {
+    display: block;
+    z-index: 15;
+  }
+
+  .header__top-active {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100vw;
+    height: 100%;    
+    background: linear-gradient(50deg, #f7ae3b, #0aa566);
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+  }
+
+  .header__list {
+    flex-direction: column;
+    align-items:center;
+  }
+
+}
+
+
+
+
+@media (max-width: 1024px) { 
+  .header__btn {
+    width: 220px;
+    height: 50px;
+    padding-left: 15px;
+  }
+}
+
+
+
+
+@media (max-width: 768px) { 
+
+}
+
+
+
+@media (max-width: 568px) { 
+
+  .logo__img {
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+}
+
+
+@media (max-width: 320px) { 
+  .logo__img {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+
