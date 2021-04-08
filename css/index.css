@@ -820,7 +820,7 @@ html {
 .reviews__block-content {
   display: flex;
   flex-direction: column;
-  width: 455px;  
+  max-width: 455px;  
   margin-right: 50px;
 }
 
@@ -1191,10 +1191,10 @@ html {
     margin-left: 0;
     margin-bottom: 50px;
   }
-/* end about */
+  /* end about */
 
 
-/* start story */
+  /* start story */
   .story {    
     padding-top: 90px;
     padding-bottom: 120px;
@@ -1207,7 +1207,7 @@ html {
   .story__img {
     width: 90%;
   }
-/* end story */
+  /* end story */
 }
 
 
@@ -1283,7 +1283,7 @@ html {
   /* end smoothies */
 
 
-/* start products */
+  /* start products */
   .products {
     overflow-x: scroll;
     height: 100%;
@@ -1291,24 +1291,25 @@ html {
 
   .products__block {
     min-width: 250px;
-    padding: 60px 0;
+    padding: 30px 0;
   }
   
   .products__title {
     margin: 10px;
   }
-/* end products */
+  /* end products */
 
 
-/* start story */
+  /* start story */
   .story {
     flex-direction: column;
     padding-top: 30px;
-    padding-bottom: 80px;
+    padding-bottom: 30px;
   }
 
   .story__title {
-    margin: 20px 0;
+    margin-top: 0;
+    margin-bottom: 20px;
   }
 
   .story__btn {
@@ -1318,13 +1319,14 @@ html {
   .story__container::before {
     background-size: 90%;
   }
-/* end story */
+  /* end story */
 
 
-
-.reviews::before {
-  display: none;
-}
+  /* start reviews */
+  .reviews::before {
+    display: none;
+  }
+  /* end reviews */
 }
 
 
@@ -1345,9 +1347,18 @@ html {
   /* end header */
 
 
+  /* start story */
   .story__container::before {
     background-size: 80%;
   }
+  /* end story */
+
+
+  /* start reviews */
+  .reviews__block-content {
+    margin: 50px 10px;
+  }
+  /* end reviews */
 }
 
 
@@ -1367,10 +1378,14 @@ html {
     font-size: 4rem;
     margin: 30px 0 20px;
   }
+
+  .smoothies__text {
+    line-height: 1.7;
+  }
   /* end smoothies */
 
 
-   /* start about */
+  /* start about */
   .about__block-img {
     top: -20px;
     width: 60%;
@@ -1382,11 +1397,24 @@ html {
 /* end about */
 
 
-/* start story */
+  /* start story */
   .story__container::before {
     background-size: 70%;
   }
-/* end story */
+  /* end story */
+
+
+  /* start reviews */  
+  .reviews {
+    background-size: 80%;
+    background-position: 50% 61%;
+    padding: 30px 0;
+  }
+
+  .reviews__block {
+    flex-direction: column-reverse;
+  }
+  /* end reviews */
 }
 
 
@@ -1417,6 +1445,7 @@ html {
 
   .smoothies__text {
     margin-bottom: 20px;
+    line-height: 1.6;
   }
 
   .smoothies__content {
@@ -1434,7 +1463,7 @@ html {
   /* end smoothies */
 
 
-/* start about */
+  /* start about */
   .about__content-title {
     font-size: 3.5rem;
     padding: 10px;
@@ -1449,7 +1478,7 @@ html {
     background-size: 65%;
     bottom: -15%;
     left: 0;
-}
+  }
 
   .about__content-list {
     padding: 0 10px;
@@ -1466,32 +1495,49 @@ html {
     padding-left: 20px;
     font-size: 1.6rem;
   }
-/* end about */
+  /* end about */
 
 
-/* start products */
+  /* start products */
   .products__img {
     width: 40%;
   }
-/* start products */
+  /* start products */
 
 
-/* start story */
+  /* start story */
   .story__container {
-    margin-left: 100px;
+    margin-left: 120px;
   }
 
   .story__container::before {
     background-size: 60%;
-    left: -40%;
+    left: -35%;
   }
 
   .story__title {
     font-size: 3.5rem;
   }
-/* end story */
+  /* end story */
 
 
+  /* start reviews */
+  .reviews {
+    max-height: 600px;
+    background-size: 80%;
+    background-position: 50% 50%;
+  }
+  
+  .reviews__title {
+    font-size: 3.5rem;
+    margin: 10px 0;
+  }
+
+  .reviews__block-img {
+    width: 40%;
+  }
+  /* end reviews */
+  
 
 }
 
