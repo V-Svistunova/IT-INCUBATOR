@@ -139,7 +139,8 @@ html {
 
 /* start title */
 
-.title {
+.title,
+.subtitle {
   font-family: 'Muli-ExtraBold';
 } 
 
@@ -346,6 +347,7 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .header__top,
@@ -779,7 +781,9 @@ html {
 .reviews {
   position: relative;
   width: 100vw;
-  height: 720px;
+  height: 100%;
+  max-height: 770px;
+  padding-bottom: 50px;
   display: flex;
   background-color: #672f1b;
   background-image: url(../assets/images/reviews_sarah-a.png);
@@ -1178,7 +1182,7 @@ html {
 
   .about__block-img {
     width: 80%;
-    top: -50px;
+    top: 0;
   }
 
   .about__content-title {
@@ -1217,10 +1221,17 @@ html {
   /* end story */
 
 
+  /* start reviews */
+  .reviews::before {
+    display: none;
+  }
+  /* end reviews */
+
+
   /* start blog */
   .blog {
     flex-direction: column;
-    padding: 30px 10px 60px 10px;
+    padding: 0 10px 60px 10px;
   }
 
   .blog__block,
@@ -1380,7 +1391,8 @@ html {
   /* start story */
   .story {
     flex-direction: column;
-    padding: 30px 0;
+    padding-top: 0;
+    padding-bottom: 30px;
   }
 
   .story__title {
@@ -1400,13 +1412,6 @@ html {
     width: 80%;
   }
   /* end story */
-
-
-  /* start reviews */
-  .reviews::before {
-    display: none;
-  }
-  /* end reviews */
 }
 
 
@@ -1414,6 +1419,15 @@ html {
 
 @media (max-width: 1024px) { 
   
+  .title {
+    font-size: 4.5rem;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
   /* start header */
   .header__btn {
     width: 220px;
@@ -1440,7 +1454,6 @@ html {
   }
   /* end reviews */
 
-
   
   /* start blog */
   .blog__img {
@@ -1454,6 +1467,14 @@ html {
 
 @media (max-width: 768px) { 
 
+  .title {
+    font-size: 4rem;
+  }
+
+  .subtitle {
+    font-size: 2.2rem;
+  }
+
   /* start header */
   .header__content {
     padding-bottom: 300px;
@@ -1462,11 +1483,6 @@ html {
 
 
   /* start smoothies */
-  .smoothies__title {
-    font-size: 4rem;
-    margin: 30px 0 20px;
-  }
-
   .smoothies__text {
     line-height: 1.7;
   }
@@ -1475,12 +1491,7 @@ html {
 
   /* start about */
   .about__block-img {
-    top: -20px;
     width: 60%;
-  }
-
-  .about__content-title {
-    font-size: 4rem;
   }
 /* end about */
 
@@ -1496,7 +1507,6 @@ html {
   .reviews {
     background-size: 80%;
     background-position: 50% 61%;
-    padding: 30px 0;
   }
 
   .reviews__block {
@@ -1519,6 +1529,14 @@ html {
 
 @media (max-width: 568px) { 
 
+  .title {
+    font-size: 3.5rem;
+  }
+
+  .subtitle {
+    font-size: 2.0rem;
+  }
+
   /* start header */
   .logo__img {
     width: 90%;
@@ -1528,13 +1546,21 @@ html {
 
   .header__content {
     padding-bottom: 200px;
+  }  
+
+  .header__personal-social {
+    width: 200px;
+    justify-content: center;
+  }
+
+  .header__social::before {
+    display: none;
   }
   /* end header */
 
 
   /* start smoothies */
   .smoothies__title {
-    font-size: 3rem;
     margin: 30px 0 20px;
   }
 
@@ -1551,16 +1577,11 @@ html {
     width: 150px;
     height: 120px;
   }
-
-  .smoothies__content-title {
-    font-size: 2rem;
-  }
   /* end smoothies */
 
 
   /* start about */
   .about__content-title {
-    font-size: 3.5rem;
     padding: 10px;
     max-width: max-content;
   }
@@ -1609,10 +1630,6 @@ html {
     background-size: 60%;
     left: -35%;
   }
-
-  .story__title {
-    font-size: 3.5rem;
-  }
   /* end story */
 
 
@@ -1624,7 +1641,6 @@ html {
   }
   
   .reviews__title {
-    font-size: 3.5rem;
     margin: 10px 0;
   }
 
@@ -1636,7 +1652,6 @@ html {
 
   /* start blog */
   .blog__title {
-    font-size: 3.5rem;
     margin: 0 auto 20px;
   }
 
@@ -1645,7 +1660,6 @@ html {
   }
 
   .blog__content-title {
-    font-size: 2rem;
     text-align: center;
   }
 
@@ -1681,7 +1695,6 @@ html {
 
   .footer__title {
     text-align: center;
-    font-size: 2rem;
     margin: 10px 0;
   }
 
