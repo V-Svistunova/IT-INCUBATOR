@@ -1211,6 +1211,7 @@ html {
   /* end story */
 
 
+  /* start blog */
   .blog {
     flex-direction: column;
     padding: 30px 10px 60px 10px;
@@ -1240,6 +1241,18 @@ html {
     margin-left: 0;
     text-align: center;
   }
+  /* end blog */
+
+
+  /* start instagram */
+  .instagram__container {
+    overflow-x: scroll;
+  }
+
+  .instagram__item {
+    min-width: 300px;
+  }
+  /* end instagram */
 }
 
 
@@ -1328,6 +1341,10 @@ html {
   
   .products__title {
     margin: 10px;
+  }
+
+  .products__btn {
+    margin-top: 30px;
   }
   /* end products */
 
