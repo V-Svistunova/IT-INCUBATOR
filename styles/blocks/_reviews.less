@@ -31,8 +31,7 @@
 }
 
 .reviews__title {
-  font-size: 5.0rem;
-  line-height: 0.8;
+  line-height: 1;
   letter-spacing: -1px;
   text-align: center;
 }
@@ -62,19 +61,22 @@
 .reviews__block-cite {
   color: #f7ae3b;
   font-size: 1.8rem;
-  line-height: 1.94;
   font-family: 'Muli-BoldItalic';
   line-height: 2.5;
 }
 
 .reviews__arrow {
-  width: 160px;
+  width: 100%;
+  max-width: 24rem;
   display: flex;
   justify-content: space-between;
 }
 
-.reviews__arrow-btn {
-  background-color:#672f1b;
+.reviews__arrow-left,
+.reviews__arrow-right {
+  max-width: 11rem;
+  max-height: 3rem;
+  background-color: transparent;
 }
 
 

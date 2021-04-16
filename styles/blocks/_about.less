@@ -32,8 +32,8 @@
 
 .about__content-title {
   position: relative;
-  max-width: 600px;
   font-size: 5.5rem;
+  max-width: 600px;
   margin-top: 0;
   line-height: 1.09;
   letter-spacing: -1.1px;
@@ -71,20 +71,11 @@
 
 .about__btn {
   position: relative;
-  display: flex;
-  justify-content: flex-start;
-  width: 380px;
-  height: 60px;
-  color: #ffffff;
+  max-width: 38rem;
+  max-height: 6rem;
   font-size: 2.1rem;
-  line-height: 1.05; 
-  padding-left: 40px;
-  border: solid 2px #f8b231;  
-  border-radius: 30px;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  -ms-border-radius: 30px;
-  -o-border-radius: 30px;
+  line-height: 1.05;
+  border: solid 2px #f8b231;
 } 
 
 .about__btn::after {
@@ -105,6 +96,10 @@
   .about {
     max-height: max-content;
     flex-direction: column;
+  }
+
+  .about__block {
+    margin-bottom: 20px;
   }
 
   .about__block-img {
@@ -161,12 +156,5 @@
 
   .about__content-item {
     margin-bottom: 10px;
-  }
-
-  .about__btn {
-    width: 290px;
-    height: 50px;
-    padding-left: 20px;
-    font-size: 1.6rem;
   }
 }

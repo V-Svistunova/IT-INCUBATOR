@@ -7,19 +7,21 @@
   background-color: #f6ab3b;
   display: flex;
   align-items:center;
+  justify-content: space-around;
 }
 
 .footer__container {
   width: 100vw;
+  max-width: 1200px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 
 .footer__logo {
   display: flex;
   align-items: center;
-  margin-right: 150px;
+  margin-right: 100px;
 }
 
 .footer__title {
@@ -62,11 +64,11 @@
   background-image: url(../assets/images/footer__mail.png);
   background-repeat: no-repeat;
   background-position: 20px center;
-  text-align: center;
+  text-align: left;
+  padding-left: 60px;
   font-size: 1.7rem;
   font-family: 'Muli-Bold';
   line-height: 2.06;
-  letter-spacing: -0.34px;
   color: #6d450c;
 }
 
@@ -77,21 +79,21 @@
 .footer__mail-btn {  
   position: relative;
   border-style: none;
+  max-width: 19rem;
+  max-height: 4rem;
   background-color: #f6ab3b;
   font-size: 1.8rem;
   line-height: 2.22;
   letter-spacing: -0.36px;
   color: #6d450c;
   text-transform: uppercase;
-  margin-top: 15px;
-  margin-left: 20px;
 }
 
 .footer__mail-btn::before {
   position: absolute;
   content: ".";
-  top: -10px;
-  left: -50px;
+  top: -15px;
+  left: -25px;
   width: 48px;
   height: 48px;
   color:transparent;
@@ -104,12 +106,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 120px;
+  margin-left: 100px;
+  margin-top: 25px;
 }
 
 .footer__social-list {
   display: flex;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .footer__social-item {
@@ -169,7 +174,7 @@
   
   .footer__container {
     height: 700px;
-    max-width: 400px;
+    max-width: 380px;
     margin: 0 20px;
   }
 
@@ -215,7 +220,14 @@
 
 
 
-
+@media (max-width: 320px) { 
+  
+  .form-mail__input {
+    width: 100%;
+    max-width: 260px;
+  }
+  
+}
 
 
 

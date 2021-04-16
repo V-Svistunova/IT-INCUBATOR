@@ -48,24 +48,37 @@ html {
 .btn {
   display: flex;
   align-items: center;
+  justify-content: space-between;  
+  width: 100%;
+  height: 100vmax; 
+  padding: 0 38px;
+  font-family: 'MuliExtraBold', sans-serif;
+  color: white;
   outline: none;
-  font-family: 'Muli-ExtraBold';
   border-style: none;
+  border-radius: 35px;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  -ms-border-radius: 35px;
+  -o-border-radius: 35px;
 }
 
 .btn:focus {
   outline: 1px solid rgb(12, 12, 12);
 }
 
-.btn:hover{
+.btn:hover {
   opacity: 0.7;
-  border: 1px double black;
-  outline: none;
+  border: 2px double black;  
+  color: #1e1e1e;
+  outline: none;    
+  cursor: pointer;
 }
 
 .btn:active {
   opacity: 0.9;
   border: 2px inset white;
+  color: black;
   outline: none;
 }
 
@@ -73,21 +86,10 @@ html {
   background-color: #0aa566;
 }
 
-.btn--dark-green {
-  background-color: #14826f;
+.btn--transparent-bg {
+  background-color: transparent;
 }
 
-.btn--brown {
-  background-color: #632b17;
-}
-
-.btn--yellow {
-  background-color: #f7ae3b;
-}
-
-.btn--orange {
-  background-color: #c3471b;
-}
 
 /* end button */
 
@@ -98,7 +100,8 @@ html {
 
 .title,
 .subtitle {
-  font-family: 'Muli-ExtraBold';
+  font-family: 'Muli-ExtraBold', sans-serif;
+  font-size: 5rem;
 } 
 
 .title--orange {
@@ -198,7 +201,7 @@ html {
 /* start other */
 
 .item {
-  font-family: 'Muli-Bold';
+  font-family: 'Muli-Bold', sans-serif;
 }
 
 .text--black {
@@ -206,6 +209,12 @@ html {
 }
 
 .input:focus {
+  border: 1px solid rgb(0, 0, 0);
+  background-color: white;
+}
+
+.input:hover {
+  cursor: pointer;
   border: 2px solid rgb(0, 0, 0);
   background-color: rgb(247, 236, 164);
 }
@@ -218,50 +227,47 @@ html {
 
 @media (max-width: 1200px) {
   
+  html {
+    font-size: 9.5px;
+  }
+
   .title {
     text-align: center;
-    margin-top: 80px;
-    margin-bottom: 40px;
-    padding-top: 0;
-    padding-bottom: 0;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
 
 
 @media (max-width: 1024px) { 
   
-  .title {
-    font-size: 4.5rem;
-    margin-top: 60px;
-    margin-bottom: 30px;
+  html {
+    font-size: 9px;
   }
 }
 
 
 @media (max-width: 768px) { 
 
-  .title {
-    font-size: 4rem;    
-    margin-top: 40px;
-    margin-bottom: 20px;
-  }
-
-  .subtitle {
-    font-size: 2.2rem;
+  html {
+    font-size: 8.5px;
   }
 }
 
 
 @media (max-width: 568px) { 
 
-  .title {
-    font-size: 3.5rem;    
-    margin-top: 30px;
-    margin-bottom: 15px;
+  html {
+    font-size: 8px;
   }
+}
 
-  .subtitle {
-    font-size: 2.0rem;
+
+
+@media (max-width: 320px) { 
+  
+  html {
+    font-size: 7px;
   }
 }
 

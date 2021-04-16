@@ -24,11 +24,13 @@
 }
 
 .header__burger-btn {
+  max-width: 3rem;
+  max-height: 3rem;
   display: none;
-  background-color: transparent;
+  padding-top: 35px;
   position: relative;
-  top: 40px;
-  left: 30px;
+  top: 0;
+  left: 0;
 }
 
 .header__top {
@@ -148,19 +150,10 @@
 
 .header__btn {
   position: relative;
-  display: flex;
-  justify-content: flex-start;
-  padding-left: 40px;
-  width: 280px;
-  height: 70px;
-  border-radius: 35px;
+  max-width: 28rem;
+  max-height: 7rem;
   font-size: 2.4rem;
   line-height: 1.67;
-  color: #ffffff;
-  -webkit-border-radius: 35px;
-  -moz-border-radius: 35px;
-  -ms-border-radius: 35px;
-  -o-border-radius: 35px;
 }
 
 .header__btn::after {
@@ -242,12 +235,6 @@
 
 
 @media (max-width: 1024px) { 
-  
-  .header__btn {
-    width: 220px;
-    height: 60px;
-    padding-left: 30px;
-  }
 
   .header__content {
     padding-bottom: 400px;
@@ -262,7 +249,6 @@
     padding-bottom: 300px;
   }
 }
-
 
 
 
@@ -292,7 +278,6 @@
 @media (max-width: 320px) { 
   
   .logo__img {
-    width: 70%;
     text-align: center;
     margin: 0 auto;
   }
