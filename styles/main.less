@@ -43,198 +43,12 @@ html {
 
 
 
-/* start button */
-
-.btn {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;  
-  width: 100%;
-  height: 100vmax; 
-  padding: 0 38px;
-  font-family: 'MuliExtraBold', sans-serif;
-  color: white;
-  outline: none;
-  border-style: none;
-  border-radius: 35px;
-  -webkit-border-radius: 35px;
-  -moz-border-radius: 35px;
-  -ms-border-radius: 35px;
-  -o-border-radius: 35px;
-}
-
-.btn:focus {
-  outline: 1px solid rgb(12, 12, 12);
-}
-
-.btn:hover {
-  opacity: 0.7;
-  border: 2px double black;  
-  color: #1e1e1e;
-  outline: none;    
-  cursor: pointer;
-}
-
-.btn:active {
-  opacity: 0.9;
-  border: 2px inset white;
-  color: black;
-  outline: none;
-}
-
-.btn--green {
-  background-color: #0aa566;
-}
-
-.btn--transparent-bg {
-  background-color: transparent;
-}
-
-
-/* end button */
-
-
-
-
-/* start title */
-
-.title,
-.subtitle {
-  font-family: 'Muli-ExtraBold', sans-serif;
-  font-size: 5rem;
-} 
-
-.title--orange {
-  color: #f2612d;
-}
-
-.title--yellow {
-  color: #f7ae3b;
-}
-
-.title--yellow-green{
-  color: #cae941;
-}
-
-.title--white {
-  color: white;
-}
-
-/* end title */
-
-
-
-/* start link */
-
-.link {  
-  text-decoration: none;
-}
-
-.link:visited {
-  box-shadow: 1px 1px 2px black;
-}
-
-.link:focus {
-  outline: 2px solid rgb(54, 54, 54);
-}
-
-.link:hover {
-  opacity: 0.6;
-  color: #c3471b;
-  cursor: pointer;
-}
-
-.link:active {
-  opacity: 1;
-  color: #632b17;
-}
-
-/* end link */
-
-
-
-/* start block */
-
-.block--brown {
-  background-color: #632b17;
-}
-
-.block--dark-green {
-  background-color: #178670;
-}
-
-.block--yellow {
-  background-color: #f7ae3b;
-}
-
-.block--orange {
-  background-color: #c3471b;
-}
-
-/* end block */
-
-
-
-/* start social */
-
-.social:visited {
-  box-shadow: 1px 1px 2px black;
-}
-
-.social:focus {
-  outline: 2px solid rgb(54, 54, 54);
-}
-
-.social:hover {
-  opacity: 0.6;
-}
-
-.social:active {
-  opacity: 1;
-  border: 1px inset black;
-}
-
-/* end social */
-
-
-
-/* start other */
-
-.item {
-  font-family: 'Muli-Bold', sans-serif;
-}
-
-.text--black {
-  color: #1e1e1e;
-}
-
-.input:focus {
-  border: 1px solid rgb(0, 0, 0);
-  background-color: white;
-}
-
-.input:hover {
-  cursor: pointer;
-  border: 2px solid rgb(0, 0, 0);
-  background-color: rgb(247, 236, 164);
-}
-
-/* end other */
-
-
-
 /* start @media */
 
 @media (max-width: 1200px) {
   
   html {
     font-size: 9.5px;
-  }
-
-  .title {
-    text-align: center;
-    margin-left: 10px;
-    margin-right: 10px;
   }
 }
 
@@ -263,7 +77,6 @@ html {
 }
 
 
-
 @media (max-width: 320px) { 
   
   html {
@@ -277,6 +90,15 @@ html {
 
 
 /* -------------------- blocks --------------------*/
+
+@import "./blocks/_btn.less";
+@import "./blocks/_title.less";
+@import "./blocks/_link.less";
+@import "./blocks/_block--bg.less";
+@import "./blocks/_social.less";
+@import "./blocks/_text.less";
+@import "./blocks/_input.less";
+
 
 @import "./blocks/_header.less";
 @import "./blocks/_smoothies.less";
