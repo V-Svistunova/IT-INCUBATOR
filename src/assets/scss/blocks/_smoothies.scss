@@ -1,0 +1,128 @@
+
+.smoothies {
+  width: 100vw;
+  height: 100%;
+  max-height: 870px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+  margin-bottom: 100px;
+
+  @media (max-width: 1200px) {
+    max-height: 1100px;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    text-align: center;
+    line-height: 0.8;
+    letter-spacing: -1px;
+  }
+  
+  &__text {
+    max-width: 915px;
+    font-size: 1.8rem;
+    line-height: 1.94;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    padding: 0 20px;
+
+    @media (max-width: 1200px) {
+      margin-bottom: 30px;
+    }
+
+    @media (max-width: 768px) {
+      line-height: 1.7;
+    }
+
+    @media (max-width: 568px) {
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+  } 
+  
+  &__content {
+    width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items: center;
+
+    @media (max-width: 1200px) {
+      width: 410px;
+    }
+
+    @media (max-width: 568px) {
+      width: 310px;
+    }
+
+    &-title {
+
+      @media (max-width: 1200px) {
+        margin: 10px 0;
+      }
+
+      @media (max-width: 320px) {
+        font-size: 1.5rem;
+      }
+    }    
+
+    &-item {
+      width: 270px;
+      height: 200px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items:center;
+      border-right: 2px solid #f6edde;
+      border-bottom: 2px solid #f6edde;
+      
+      @media (max-width: 1200px) {
+        width: 200px;
+        height: 160px;
+      }
+
+      @media (max-width: 568px) {
+        width: 150px;
+        height: 120px;
+      }
+
+      &:last-child {
+        border-right: none;
+      }      
+  
+      &:nth-child(even) {
+
+        @media (max-width: 1200px) {
+          border-right: none
+        }
+      }
+      
+    }
+
+    &-img {
+      display: block;
+      max-width: 80px;
+      margin: 0 auto;
+    }
+
+    &-title {
+      font-size: 2.5rem;
+      line-height: 1.6;
+      letter-spacing: -0.5px;
+      text-align: center;
+    }
+  }  
+  
+  
+  
+  
+  
+  
+  
+}
+

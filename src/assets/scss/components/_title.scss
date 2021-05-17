@@ -1,0 +1,33 @@
+
+.subtitle {
+  font-family: 'Muli-ExtraBold', sans-serif;
+  font-size: 5rem;
+} 
+
+.title {
+  font-family: 'Muli-ExtraBold', sans-serif;
+  font-size: 5rem;
+
+  @media (max-width: 1200px) {
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  &--orange {
+    color: #f2612d;
+  }
+  
+  &--yellow {
+    color: #f7ae3b;
+  }
+  
+  &--yellow-green{
+    color: #cae941;
+  }
+  
+  &--white {
+    color: white;
+  }
+}
+
