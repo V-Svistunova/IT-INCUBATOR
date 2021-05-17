@@ -18,6 +18,11 @@
     padding-top: 12rem;
     padding-bottom: 8rem;
 
+    @media (max-width: 568px) {      
+      padding-top: 6rem;
+      padding-bottom: 4rem;
+    }
+
     &--brown {
       background-color: #632b17;
     }
@@ -38,8 +43,7 @@
       min-width: 250px;
     }
   }
-  
-  
+    
   &__title {
     font-family: 'Muli-Bold';
     font-size: 2.4rem;
@@ -47,7 +51,8 @@
     text-align: center;
 
     @media (max-width: 1200px) {
-      margin: 10px 20px;
+      margin: 10px 30px;
+      line-height: 1.2;
     }
   }
   
@@ -56,7 +61,7 @@
     font-size: 2.1rem;
     line-height: 1.52;
     color: white;  
-    margin-bottom: 65px;
+    margin-bottom: 6.5rem;
   }
   
   &__btn {
@@ -78,13 +83,6 @@
       background-image:url(../../assets/images/Arrow-white.png);
       background-repeat: no-repeat;
       background-position: center center;
-    }
-
-    &__img {
-
-      @media (max-width: 568px) {
-        width: 40%;
-      }
     }
   } 
 }
