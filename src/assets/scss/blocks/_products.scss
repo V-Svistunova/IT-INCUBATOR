@@ -12,11 +12,11 @@
   &__block {
     @include flex--a-j-d (center, flex-start, column);
     flex-grow: 1;
-    padding-top: 12rem;
+    padding-top: 43rem;
     padding-bottom: 8rem;
 
     @media (max-width: 568px) {      
-      padding-top: 6rem;
+      padding-top: 32rem;
       padding-bottom: 4rem;
     }
 
@@ -58,7 +58,7 @@
     font-size: 2.1rem;
     line-height: 1.52;
     color: $main-color;  
-    margin-bottom: 6.5rem;
+    margin-bottom: 6rem;
   }
   
   &__btn {

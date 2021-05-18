@@ -26,6 +26,7 @@
   
   &__container {
     width: 100vw;
+    height: 390px;
     display: flex;
 
     @media (max-width: 1540px) {
@@ -37,11 +38,23 @@
     position: relative;
     display: flex;
     flex-grow: 1;
+    z-index: 2;
   
     @media (max-width: 1540px) {
       min-width: 300px;
     }
-  
+    
+    &::before {
+      content: '';
+      position: absolute;
+      width: 384px;
+      height: 388px;
+      top: 0;
+      left: 0;
+      background: linear-gradient(140deg, transparent, transparent 80%, #1d1e1f);
+      opacity: 0.25;
+  }
+
     &::after {
       @extend %pseudo-element;
       bottom: 20px;
@@ -51,6 +64,8 @@
       background-image:url(../../assets/images/instagram__icon-white.png);
     }
   }
+
+  
   
   &__foto {
     width: 100%;
