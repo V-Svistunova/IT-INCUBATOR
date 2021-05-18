@@ -10,10 +10,8 @@
   }
 
   &__block {
+    @include flex--a-j-d (center, flex-start, column);
     flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding-top: 12rem;
     padding-bottom: 8rem;
 

@@ -5,13 +5,10 @@
     width: 100vw;
     height: 370px;
     background-color: $primary;
-    display: flex;
-    align-items:center;
-    justify-content: space-around;
+    @include flex--a-j-d (center, space-around);
 
     @media (max-width: 1540px) {
-      flex-direction: column;
-      justify-content: center;
+      @include flex--a-j-d (center, center, column);
       height: 640px;
     }
 
@@ -24,15 +21,13 @@
   &__container {
     width: 100vw;
     max-width: 1200px;
-    display: flex;
-    justify-content: space-between;
+    @include flex--a-j-d (flex-start, space-between);
     flex-wrap: wrap;
 
     @media (max-width: 1540px) {
       width: 100%;
       max-width: 900px;
-      display: flex;
-      justify-content: space-around;
+      @include flex--a-j-d (flex-start, space-between);
       margin: 0 20px;
     }
     
@@ -45,8 +40,7 @@
   }
 
   &__logo {
-    display: flex;
-    align-items: center;
+    @include flex--a-j-d (center);
     margin-right: 100px;
 
     @media (max-width: 1540px) {
@@ -90,12 +84,11 @@
 
     &-container {
       width: 270px;
-      display: flex;
-      align-items: center;
+      @include flex--a-j-d (center);
       flex-wrap: wrap; 
       
       @media (max-width: 568px) {
-        justify-content: center;
+        @include flex--a-j-d (center, center);
       }
       
     }
@@ -193,8 +186,7 @@
   }
   
   &__social {
-    display: flex;
-    justify-content: flex-end;
+    @include flex--a-j-d (flex-start, flex-end);
     position: relative;
     top: -40px;
     left: -40px;
@@ -230,12 +222,10 @@
   }
 
   &-bottom {
+    @include flex--a-j-d (center, center);
     width: 100vw;
     height: 60px;
     background-color: #6c2c1c;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     &-copyright {
       font-size: 1.4rem;
       line-height: 2.69;

@@ -24,16 +24,12 @@
     background-color: #f2662f;
 
     &::after{
-      position: absolute;
+      @extend %pseudo-element;
       top: 20%;
       left: 37%;
-      content: ".";
       width: 14px;
       height: 28px; 
-      color:transparent;
       background-image:url(../../assets/images/Arrow-top--white.png);
-      background-repeat: no-repeat;
-      background-position: center center;
     }
   }
 }

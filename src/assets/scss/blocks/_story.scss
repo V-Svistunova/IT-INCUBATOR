@@ -1,11 +1,9 @@
 
 .story {
-  @extend %width_height--100;  
+  @extend %width_height--100;
+  @include flex--a-j-d (center, center);
   max-height: 880px;
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding-top: 120px;
   padding-bottom: 160px;
 
