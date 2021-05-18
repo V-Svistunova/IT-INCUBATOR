@@ -1,7 +1,6 @@
 
 .about {
-  width: 100vw;
-  height: 100%;
+  @extend %width_height--100; 
   max-height: 800px;
   background-color: #14826f;
   display: flex;
@@ -65,15 +64,12 @@
       }      
       
       &::after {
-        content: ".";
-        position: absolute;
+        @extend %pseudo-element;
         width: 450px;
         bottom: -35px;
         left: 70px;
-        color:transparent;
         background-image:url(../../assets/images/about_line.png);
-        background-repeat: no-repeat;
-        background-position: center center;
+
         @media (max-width: 568px) {
           display: none;
         }
@@ -100,7 +96,7 @@
       margin-bottom: 20px;
       font-size: 2.1rem;
       line-height: 1.05;
-      color: #ffffff;      
+      color: $main-color;      
       @media (max-width: 568px) {
         margin-bottom: 10px;
       }
@@ -120,15 +116,8 @@
     border: solid 2px #f8b231;
 
     &::after {
-      position: absolute;
-      top: 30%;
-      right: 10%;
-      content: ".";
-      width: 30px;
-      color:transparent;
+      @extend %btn-arrow--after;      
       background-image:url(../../assets/images/Arrow-orange.png);
-      background-repeat: no-repeat;
-      background-position: center center;
     }
   }
 }

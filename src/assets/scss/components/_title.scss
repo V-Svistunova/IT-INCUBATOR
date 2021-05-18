@@ -1,12 +1,12 @@
 
 .subtitle {
   font-family: 'Muli-ExtraBold', sans-serif;
-  font-size: 5rem;
+  font-size: $font-size--subtitle;
 } 
 
 .title {
   font-family: 'Muli-ExtraBold', sans-serif;
-  font-size: 5rem;
+  font-size: $font-size--title;
 
   @media (max-width: 1200px) {
     text-align: center;
@@ -15,11 +15,11 @@
   }
 
   &--orange {
-    color: #f2612d;
+    color: $subtitle-color;
   }
   
   &--yellow {
-    color: #f7ae3b;
+    color: $primary;
   }
   
   &--yellow-green{
@@ -27,7 +27,7 @@
   }
   
   &--white {
-    color: white;
+    color: $main-color;
   }
 }
 

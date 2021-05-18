@@ -1,9 +1,8 @@
 
 .reviews {
+  @extend %width_height--100; 
+  max-height: 770px;  
   position: relative;
-  width: 100vw;
-  height: 100%;
-  max-height: 770px;
   padding: 80px 0;
   display: flex;
   background-color: #672f1b;
@@ -31,16 +30,12 @@
   }
 
   &::before {
-    position: absolute;
-    content: ".";
+    @extend %pseudo-element;
     width: 410px;
     height: 300px;
     top: -85px;
     right: 60px;
-    color:transparent;
     background-image:url(../../assets/images/reviews_dots.png);
-    background-repeat: no-repeat;
-    background-position: center center;
 
     @media (max-width: 1540px) {
       display: none;
@@ -88,11 +83,11 @@
     &-text {
       font-size: 1.8rem;
       line-height: 1.94;
-      color: #ffffff;
+      color: $main-color;
     }
 
     &-cite {
-      color: #f7ae3b;
+      color: $primary;
       font-size: 1.8rem;
       font-family: 'Muli-BoldItalic';
       line-height: 2.5;

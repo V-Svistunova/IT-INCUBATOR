@@ -4,7 +4,7 @@
   &__top {
     width: 100vw;
     height: 370px;
-    background-color: #f6ab3b;
+    background-color: $primary;
     display: flex;
     align-items:center;
     justify-content: space-around;
@@ -50,14 +50,8 @@
     margin-right: 100px;
 
     @media (max-width: 1540px) {
-      margin-right: 0;
-      margin-bottom: 30px;
-    }
-
-    @media (max-width: 568px) { 
-      margin-bottom: 30px;
-    }
-      
+      margin: 30px 0 30px 0;
+    }      
   }
 
   &__title {
@@ -117,6 +111,8 @@
     
     &-form {
     @media (max-width: 568px) {
+        width: 100vmax;
+        max-width: 500px;
         text-align: center;
       }    
     }
@@ -140,10 +136,13 @@
         width: 100%;
         max-width: 310px;
       }
-      
-      @media (max-width: 320px) { 
-        width: 100%;
+
+      @media (max-width: 400px) {
         max-width: 260px;
+      }
+      
+      @media (max-width: 320px) {
+        max-width: 200px;
       }
     }
 
@@ -158,8 +157,7 @@
       border-style: none;
       max-width: 12rem;
       max-height: 4rem;
-      padding: 0;
-      background-color: #f6ab3b;
+      padding: 0 5px;
       font-size: 1.8rem;
       line-height: 2.22;
       letter-spacing: -0.36px;
@@ -180,16 +178,12 @@
       
 
       &::before {
-        position: absolute;
-        content: ".";
+        @extend %pseudo-element;
         top: -15px;
         left: -60px;
         width: 48px;
         height: 48px;
-        color:transparent;
         background-image:url(../../assets/images/footer__Arrow.png);
-        background-repeat: no-repeat;
-        background-position: center center;
 
         @media (max-width: 568px) {
           top: -20px;
@@ -207,7 +201,15 @@
     z-index: 1;
 
     @media (max-width: 568px) {
-      margin-left: 70px;
+      left: -50px;
+    }
+
+    @media (max-width: 400px) {
+      left: -70px;
+    }
+
+    @media (max-width: 320px) {
+      left: -80px;
     }
     
 

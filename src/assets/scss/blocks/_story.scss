@@ -1,9 +1,8 @@
 
 .story {
-  position: relative;
-  width: 100vw;
-  height: 100%;
+  @extend %width_height--100;  
   max-height: 880px;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,8 +10,7 @@
   padding-bottom: 160px;
 
   @media (max-width: 1540px) {  
-    padding-top: 90px;
-    padding-bottom: 120px;
+    padding: 90px 10px 120px 10px;
   }
 
   @media (max-width: 1200px) {
@@ -47,15 +45,8 @@
     }
 
     &::after {
-      position: absolute;
-      top: 30%;
-      right: 10%;
-      content: ".";
-      width: 30px;
-      color:transparent;
+      @extend %btn-arrow--after;      
       background-image:url(../../assets/images/Arrow-orange.png);
-      background-repeat: no-repeat;
-      background-position: center center;
     }
   }
   
@@ -64,7 +55,7 @@
     margin-left: 200px;
 
     @media (max-width: 1540px) {
-      margin-left: 30px;
+      margin-left: 180px;
     }
 
     @media (max-width: 1200px) {
@@ -73,16 +64,12 @@
     }
   
     &::before {
-      position: absolute;
-      content: ".";
+      @extend %pseudo-element;      
       width: 290px;
       height: 220px;
       top: 3%;
       left: -35%;
-      color:transparent;
       background-image:url(../../assets/images/story__img-text.png);
-      background-repeat: no-repeat;
-      background-position: center center;
 
       @media (max-width: 1200px) {
         background-size: 80%;

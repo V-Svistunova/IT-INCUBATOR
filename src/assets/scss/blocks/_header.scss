@@ -1,15 +1,14 @@
 
 .header {
-  position: relative;
-  width: 100vw;
-  height: 100%;
+  @extend %width_height--100; 
   max-width: 1950px;
-  max-height: 1080px; 
+  max-height: 1080px;
+  position: relative; 
   background-image: url(../../assets/images/main-img.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom;
-  background-color: #f7ae3b;
+  background-color: $primary;
   z-index: 5;
 
   &__burger-btn {
@@ -81,7 +80,7 @@
     padding: 0;
     font-size: 1.6rem;
     line-height: 2.5; 
-    color: #ffffff;
+    color: $main-color;
     text-transform: uppercase;
 
     @media (max-width: 1200px) {
@@ -93,12 +92,17 @@
   &__item {
     &:not(:last-child) {
       margin-right: 40px;
+
+      @media (max-width: 1540px) {
+        margin-right: 20px;
+      }
     }
+
   }
 
   &__link {  
     text-decoration: none;
-    color: #ffffff;
+    color: $main-color;
   }
 
   &__personal-social {
@@ -192,21 +196,8 @@
     line-height: 1.67;
 
     &::after {
-      position: absolute;
-      top: 50%;
-      right: 10%;
-      content: ".";
-      width: 30px;
-      height: 20px;
-      color: transparent;
+      @extend %btn-arrow--after;       
       background-image:url(../../assets/images/Arrow-orange.png);
-      background-repeat: no-repeat;
-      background-position: center center;
-      transform: translateY(-50%);
-      -webkit-transform: translateY(-50%);
-      -moz-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      -o-transform: translateY(-50%);
     }
   }
 }
