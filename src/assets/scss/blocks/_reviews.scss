@@ -48,18 +48,18 @@
   &__block {
     @include flex--a-j-d (center, center);    
     text-align: center;
-    padding-top: 80px;
-    padding-bottom: 120px;
+    padding-top: 8rem;
+    padding-bottom: 12rem;
 
     @media (max-width: 768px) {
       @include flex--a-j-d (center, center, column-reverse);
-      padding-top: 40px;
-      padding-bottom: 60px;
+      padding-top: 3rem;
+      padding-bottom: 5rem;
     }
 
     @media (max-width: 568px) {
-      padding-top: 20px;
-      padding-bottom: 30px;
+      padding-top: 2rem;
+      padding-bottom: 3rem;
     }
   
     &-content {

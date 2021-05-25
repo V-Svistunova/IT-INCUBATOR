@@ -22,6 +22,14 @@ $font-size--subtitle: 5rem;
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
+
+  &:hover {
+    transform: translate(10px, -50%);
+    -webkit-transform: translate(10px, -50%);
+    -moz-transform: translate(10px, -50%);
+    -ms-transform: translate(10px, -50%);
+    -o-transform: translate(10px, -50%);
+  }
 }
 
 %pseudo-element {

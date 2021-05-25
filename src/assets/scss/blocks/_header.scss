@@ -67,36 +67,6 @@
     }    
   }
 
-  &__list {
-    display: flex;
-    list-style-type: none;
-    padding: 0;
-    font-size: 1.6rem;
-    line-height: 2.5; 
-    color: $main-color;
-    text-transform: uppercase;
-
-    @media (max-width: 1200px) {
-      @include flex--a-j-d (center, flex-start, column);
-    }
-  }
-
-  &__item {
-    &:not(:last-child) {
-      margin-right: 40px;
-
-      @media (max-width: 1540px) {
-        margin-right: 20px;
-      }
-    }
-
-  }
-
-  &__link {  
-    text-decoration: none;
-    color: $main-color;
-  }
-
   &__personal-social {
     @include flex--a-j-d (center, space-between);
     width: 380px;

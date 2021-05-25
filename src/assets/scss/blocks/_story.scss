@@ -8,11 +8,12 @@
   padding-bottom: 160px;
 
   @media (max-width: 1540px) {  
-    padding: 90px 10px 120px 10px;
+    padding: 9rem 1rem 12rem 1rem;
   }
 
   @media (max-width: 1200px) {
     flex-direction: column;
+    padding: 4.5rem 1rem 6rem 1rem;
   }
 
   &__title {
@@ -24,6 +25,10 @@
     max-width: 510px;
     font-size: 1.8rem;
     line-height: 1.94;
+
+    @media (max-width: 1200px) {
+      text-align: center;
+    }
 
     @media (max-width: 568px) {
       padding: 0 20px;

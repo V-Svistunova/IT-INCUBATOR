@@ -1,5 +1,6 @@
 
 .about {
+
   @extend %width_height--100;
   @include flex--a-j-d (center); 
   max-height: 800px;
@@ -31,10 +32,13 @@
   }
   
   &__content {
+    $about_content: &;
+
     @include flex--a-j-d (flex-start, left, column);
     flex-basis: 50%;
     width: 590px;
     margin-left: 50px;
+
     @media (max-width: 1540px) {
       @include flex--a-j-d (center, center, column);
       margin-left: 0;
@@ -46,7 +50,7 @@
     
     &-title {
       position: relative;
-      font-size: 5.5rem;
+      font-size: $font-size--title * 1.1;
       max-width: 600px;
       margin-top: 0;
       line-height: 1.09;
@@ -54,9 +58,16 @@
       @media (max-width: 1540px) {
         text-align: center;
       }
+      @media (max-width: 768px) {
+        font-size: $font-size--title *1;
+      }    
       @media (max-width: 568px) {
         max-width: max-content;
-      }      
+        font-size: $font-size--title *0.9;
+      }    
+      @media (max-width: 320px) {
+        font-size: $font-size--title *0.8;
+      }     
       
       &::after {
         @extend %pseudo-element;
@@ -81,22 +92,22 @@
       @media (max-width: 568px) {
         padding: 0px 10px;
       }
-    }
 
-    &-item {
-      padding-left: 20px;
-      margin-bottom: 20px;
-      font-size: 2.1rem;
-      line-height: 1.05;
-      color: $main-color;      
-      @media (max-width: 568px) {
-        margin-bottom: 10px;
+      #{$about_content}-item {
+        padding-left: 20px;
+        margin-bottom: 20px;
+        font-size: 2.1rem;
+        line-height: 1.05;
+        color: $main-color;      
+        @media (max-width: 568px) {
+          margin-bottom: 10px;
+        }
+
+        #{$about_content}-text--thin {
+          font-family: 'Muli-Regular';
+        }
       }
     }
-
-    &-text--thin {
-      font-family: 'Muli-Regular';
-    }    
   }
 
   &__btn {
@@ -111,5 +122,5 @@
       @extend %btn-arrow--after;      
       background-image:url(../../assets/images/Arrow-orange.png);
     }
-  }
+  }  
 }

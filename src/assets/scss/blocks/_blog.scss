@@ -1,5 +1,7 @@
 
 .blog {
+  $blog: &;
+
   @extend %width_height--100;
   @include flex--a-j-d (center, center);
   max-height: 800px;
@@ -11,31 +13,35 @@
   }
   
   &__block {
+    height: 100%;
+    max-height: 800px;
     
     @media (max-width: 1540px) {
       @include flex--a-j-d (center, center, column);
-    } 
-  }
-  
-  &__title {
-    line-height: 0.8;
-    letter-spacing: -1px;
+    }
+
+    #{$blog}__title {
+      line-height: 0.8;
+      letter-spacing: -1px;
+    }
+
+    #{$blog}__img {
+
+      @media (max-width: 1540px) {
+        width: 90%;
+      }
+      @media (max-width: 1024px) {
+        width: 80%;
+      }
+      @media (max-width: 568px) {
+        width: 70%;
+      }
+    }
   }
 
-  &__img {
-
-    @media (max-width: 1540px) {
-      width: 90%;
-    }
-    @media (max-width: 1024px) {
-      width: 80%;
-    }
-    @media (max-width: 568px) {
-      width: 70%;
-    }
-  }
-  
   &__content {
+    $blog__content: &;
+
     width: 100%;
     max-width: 690px;
     
@@ -101,24 +107,24 @@
         width: 100vw;
         margin: 0 10px;
       }
-    }
 
-    &-btn {
-      max-width: 16rem;
-      max-height: 3rem;
-      display:inline;
-      position: relative;
-      font-family: 'Muli-BoldItalic';
-      font-weight: 800;
-      color: black;
-      padding-left: 0;
-
-      &::after {
-        @extend %btn-arrow--after;
-        width: 30px;
-        height: 12px;
-        background-image:url(../../assets/images/Arrow-orange.png);
+      #{$blog__content}-btn {
+        max-width: 16rem;
+        max-height: 3rem;
+        display:inline;
+        position: relative;
+        font-family: 'Muli-BoldItalic';
+        font-weight: 800;
+        color: black;
+        padding-left: 0;
+  
+        &::after {
+          @extend %btn-arrow--after;
+          width: 30px;
+          height: 12px;
+          background-image:url(../../assets/images/Arrow-orange.png);
+        }
       }
     }
-  }    
+  }  
 }  
