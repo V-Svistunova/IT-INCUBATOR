@@ -38,7 +38,6 @@
     position: relative;
     display: flex;
     flex-grow: 1;
-    z-index: 2;
   
     @media (max-width: 1540px) {
       min-width: 300px;
@@ -47,7 +46,7 @@
     &::before {
       content: '';
       position: absolute;
-      width: 384px;
+      width: 100%;
       height: 388px;
       top: 0;
       left: 0;
@@ -64,9 +63,7 @@
       background-image:url(../../assets/images/instagram__icon-white.png);
     }
   }
-
-  
-  
+    
   &__foto {
     width: 100%;
   }  

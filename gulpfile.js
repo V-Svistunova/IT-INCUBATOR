@@ -151,7 +151,7 @@ function cssWatch(cb) {
 
 // JS 
 function js(cb) {
-    return src(jsFiles) // если порядок не важен, то берем все файлы: return src(path.src.js, {base: srcPath + 'assets/js/'})
+    return src(path.src.js, {base: srcPath + 'assets/js/'}) // return src(jsFiles) если порядок не важен, то берем все файлы: return src(path.src.js, {base: srcPath + 'assets/js/'})
         .pipe(sourcemaps.init())
         .pipe(plumber({
             errorHandler : function(err) {

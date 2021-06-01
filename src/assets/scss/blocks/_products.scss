@@ -13,7 +13,12 @@
     @include flex--a-j-d (center, flex-start, column);
     flex-grow: 1;
     padding-top: 43rem;
-    padding-bottom: 8rem;    
+    padding-bottom: 8rem;
+    
+    &:hover {
+      animation: shake 2.5s 1s 2 alternate;
+      -webkit-animation: shake 2.5s 2s 2 alternate;
+}
 
     @media (max-width: 1200px) {
       min-width: 250px;

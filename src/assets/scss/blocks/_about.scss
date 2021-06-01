@@ -21,6 +21,18 @@
     &-img {
       position: relative;
       top: 75px;
+      transition: 2s;
+      -webkit-transition: 3s;
+
+      
+      &:hover {
+        transform: rotate(-7deg);
+        -webkit-transform: rotate(-7deg);
+        -moz-transform: rotate(-7deg);
+        -ms-transform: rotate(-7deg);
+        -o-transform: rotate(-7deg);
+}
+
       @media (max-width: 1540px) {
         width: 70%;
         top: 0;      
