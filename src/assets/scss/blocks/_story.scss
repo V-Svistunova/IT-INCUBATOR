@@ -1,13 +1,14 @@
 
-.story {
-  @extend %width_height--100;
+.story {  
   @include flex--a-j-d (center, center);
   max-height: 880px;
+  max-width: 1920px;
   position: relative;
   padding-top: 120px;
   padding-bottom: 160px;
 
   @media (max-width: 1540px) {  
+    justify-content: space-between;
     padding: 9rem 1rem 12rem 1rem;
   }
 
@@ -55,10 +56,10 @@
   
   &__container {
     position: relative;
-    margin-left: 200px;
+    text-align: right;
 
     @media (max-width: 1540px) {
-      margin-left: 180px;
+
     }
 
     @media (max-width: 1200px) {

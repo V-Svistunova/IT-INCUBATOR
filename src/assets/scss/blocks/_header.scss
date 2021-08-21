@@ -1,12 +1,10 @@
 
-.header {
-  @extend %width_height--100; 
+.header {  
   max-width: 1950px;
   max-height: 1080px;
   position: relative;
   background: $primary url(../../assets/images/main-img.png) no-repeat bottom;  
   background-size: contain;
-  z-index: 5;
 
   &__burger {
     background: url("./../images/header__burger-menu.png") no-repeat center;

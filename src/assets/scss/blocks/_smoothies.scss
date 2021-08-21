@@ -1,6 +1,6 @@
 
 .smoothies {
-  @extend %width_height--100;
+  
   @include flex--a-j-d (center, center, column);
   max-height: 870px;
   margin-top: 60px;

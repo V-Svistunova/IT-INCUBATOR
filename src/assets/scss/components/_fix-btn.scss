@@ -5,6 +5,22 @@
   bottom: 1.5rem;
   display: flex;
 
+  @media (max-width: 1500px) {
+    right: 7rem;
+  }
+
+  @media (max-width: 968px) {
+    right: 5rem;
+  }
+
+  @media (max-width: 568px) {
+    right: 3rem;
+  }
+
+  @media (max-width: 320px) {
+    right: 2rem;
+  }
+
   &__name {
     font-family: 'Muli-Bold';
     font-size: 1.6rem;
@@ -12,7 +28,7 @@
     color: #ffffff;
     padding-right: 15px;
     padding-top: 40px;
-    text-shadow: 1px 1px 5px #1e1e1e, 0 0 5px #1e1e1e;
+    text-shadow: 0 0 5px black, 0 0 5px black;
   }
 
   &__arrow {
@@ -30,7 +46,7 @@
       transform: translate(-50%, -50%);
       width: 14px;
       height: 28px; 
-      background-image:url(../../assets/images/Arrow-top--white.png);
+      background:url(../../assets/images/Arrow-top--white.png) no-repeat center;
     }
   }
 }

@@ -2,7 +2,7 @@
 .blog {
   $blog: &;
 
-  @extend %width_height--100;
+  
   @include flex--a-j-d (center, center);
   max-height: 800px;
   padding: 100px 0 200px 0;

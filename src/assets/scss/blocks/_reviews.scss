@@ -1,6 +1,6 @@
 
 .reviews {
-  @extend %width_height--100;
+  
   @include flex--a-j-d (center, space-around, column);
   max-height: 770px;  
   position: relative;

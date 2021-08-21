@@ -1,7 +1,5 @@
 
 .about {
-
-  @extend %width_height--100;
   @include flex--a-j-d (center); 
   max-height: 800px;
   background-color: #14826f;
