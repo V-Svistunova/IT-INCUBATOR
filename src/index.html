@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.min.css">
-    <title>gulp project</title>
+    <title>Smoothies</title>
 </head>
 <body class="body">
     <header id="header" class="header">
@@ -81,8 +81,8 @@
             </div>                        
         </div>
         <div class="header__content">
-            <button class="header__btn btn btn--green"> Shop Naw </button>
-        </div>
+            <button id="modalOpen" class="header__btn btn btn--green"> Shop Naw </button>
+        </div>        
     </header>
     <section id="home" class="smoothies">
         <h2 class="smoothies__title title title--yellow">What are these smoothies?</h2>
@@ -312,9 +312,30 @@
             <small class="footer-bottom-copyright">&copy; 2021. All Rights Reserved.</small>          
         </div>
     </footer>
+
     <div class="fix-btn">
         <span class="fix-btn__name">Go top</span>
         <a class="fix-btn__arrow link" href="#header" ></a>
+    </div>
+
+    <div class="modal">
+        <div class="modal-wrapper">
+            <div class="modal-header">
+                <btn class="modal-close">X</btn>
+                <h3 class="title">Что такое, кто это?</h3>
+            </div>
+            <div class="modal-body">                
+                <p class="modal-text text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Ipsam cum explicabo dignissimos a beatae animi blanditiis illum minus modi soluta quod delectus, porro voluptate deleniti atque saepe sunt adipisci nulla.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas sunt doloremque nisi voluptatibus unde omnis, saepe, cumque vero voluptate tempora consectetur facere placeat laudantium porro voluptas maxime voluptatum pariatur error!
+                    Repudiandae, ipsam fugiat. Perspiciatis cumque ab repellendus excepturi hic placeat totam consectetur provident eius, reiciendis, doloremque officia magnam. Asperiores qui est, quos adipisci illo placeat ipsa cupiditate. Nam, reprehenderit repellendus.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <h3 class="title">Отвали со своим этим самым...</h3>
+            </div>
+        </div>
     </div>
     
 

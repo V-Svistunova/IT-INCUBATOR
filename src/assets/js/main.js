@@ -1,11 +1,18 @@
 const goTop = document.querySelector(".fix-btn");
+let openModalBtn = document.getElementById("modalOpen");
+let modal = document.querySelector('.modal');
+let closeModalBtn = document.querySelector(".modal-close")
+
 let burgerBtn = document.getElementById("burger");
 let menu = document.querySelector(".header__top");
 
 function openMenu() {  
   burgerBtn.addEventListener('click', toggleBurger);
   burgerBtn.addEventListener('click', toggleMenu);
+  
 }
+
+openMenu();
 
 function toggleBurger() {
   burgerBtn.classList.toggle("header__burger--close");
@@ -20,7 +27,7 @@ function removeMenuAndClose() {
   burgerBtn.classList.remove("header__burger--close");
 }
 
-openMenu();
+
 
 let anchors = document.querySelectorAll('a[href*="#"]');
 
@@ -43,3 +50,11 @@ window.addEventListener('scroll', function() {
     goTop.style.display = 'none'
   }
 });
+
+openModalBtn.addEventListener('click', function() {
+  modal.style.display = 'flex'
+})
+
+closeModalBtn.addEventListener('click', function() {
+  modal.style.display = 'none'
+})
