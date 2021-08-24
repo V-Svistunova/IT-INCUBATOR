@@ -6,13 +6,14 @@ let closeModalBtn = document.querySelector(".modal-close")
 let burgerBtn = document.getElementById("burger");
 let menu = document.querySelector(".header__top");
 
+
+// BurgerMenu
+
 function openMenu() {  
   burgerBtn.addEventListener('click', toggleBurger);
   burgerBtn.addEventListener('click', toggleMenu);
   
 }
-
-openMenu();
 
 function toggleBurger() {
   burgerBtn.classList.toggle("header__burger--close");
@@ -27,7 +28,11 @@ function removeMenuAndClose() {
   burgerBtn.classList.remove("header__burger--close");
 }
 
+openMenu();
 
+
+
+// slowly anchors
 
 let anchors = document.querySelectorAll('a[href*="#"]');
 
@@ -43,6 +48,10 @@ for(let anchor of anchors) {
   })
 }
 
+
+
+// goTop scroll
+
 window.addEventListener('scroll', function() {
   if (window.scrollY > 300) {
     goTop.style.display = 'flex'
@@ -51,10 +60,20 @@ window.addEventListener('scroll', function() {
   }
 });
 
+
+
+// modal window
+
 openModalBtn.addEventListener('click', function() {
   modal.style.display = 'flex'
 })
 
 closeModalBtn.addEventListener('click', function() {
   modal.style.display = 'none'
+})
+
+window.addEventListener('click', function(event)  {
+  if(event.target === modal) {    
+    modal.style.display = 'none'
+  }
 })
