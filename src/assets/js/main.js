@@ -77,3 +77,27 @@ window.addEventListener('click', function(event)  {
     modal.style.display = 'none'
   }
 })
+
+// simple slider
+
+let offset = 0;
+
+const sliderLine = document.querySelector('.reviews__line');
+const sliderRight = document.querySelector('.reviews__arrow-right');
+const sliderLeft = document.querySelector('.reviews__arrow-left');
+
+sliderRight.addEventListener('click', function() {
+  offset = offset + 725;
+  if (offset > 2175) {
+    offset = 0;
+  }
+  sliderLine.style.left = -offset + 'px'
+})
+
+sliderLeft.addEventListener('click', function() {
+  offset = offset - 725;
+  if(offset < 0) {
+    offset = 2175;
+  }
+  sliderLine.style.left = -offset + 'px'
+})

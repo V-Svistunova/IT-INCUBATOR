@@ -1,14 +1,13 @@
 
 .story {  
-  @include flex--a-j-d (center, center);
+  @include flex--a-j-d (center, space-evenly);
   max-height: 880px;
   max-width: 1920px;
   position: relative;
   padding-top: 120px;
   padding-bottom: 160px;
 
-  @media (max-width: 1540px) {  
-    justify-content: space-between;
+  @media (max-width: 1540px) {
     padding: 9rem 1rem 12rem 1rem;
   }
 
@@ -74,6 +73,10 @@
       top: 3%;
       left: -35%;
       background-image:url(../../assets/images/story__img-text.png);
+
+      @media (max-width: 1540px) {
+        top: -70px;
+      }
 
       @media (max-width: 1200px) {
         background-size: 80%;
