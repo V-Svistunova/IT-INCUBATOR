@@ -1,3 +1,5 @@
+[desktop project Smoothie](https://V-Svistunova.github.io/Smoothie/dist)
+
 ## Folder **Smoothie**
 
 #### В проекте реализовано:
