@@ -47,16 +47,16 @@
   &__logo {
     display: flex;
     align-items: center;
-    margin-right: 100px;
+    padding-right: 100px;
 
     @media (max-width: 1540px) {
-      margin-top: 2rem;
-      margin-right: 0;
-      margin-bottom: 30px;
+      padding-top: 5rem;
+      padding-right: 0;
+      padding-bottom: 30px;
     }
 
     @media (max-width: 568px) { 
-      margin-bottom: 30px;
+      padding-bottom: 30px;
     }
       
   }
