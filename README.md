@@ -1,4 +1,4 @@
-[desktop project Smoothie](https://V-Svistunova.github.io/Smoothie/dist)
+[desktop project Smoothie](https://v-svistunova.github.io/IT-incubator/Smoothie/dist)
 
 ## Folder **Smoothie**
 
