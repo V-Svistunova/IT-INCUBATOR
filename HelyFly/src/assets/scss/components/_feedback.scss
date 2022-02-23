@@ -1,0 +1,74 @@
+.feedback {
+  display: grid;
+  grid-template-columns: 3.5rem auto;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  max-height: 67px;
+  height: 100vmax;
+  border-top: 0.5px solid $secondaryColor;
+  border-bottom: 0.5px solid $secondaryColor;
+
+  @media screen and (min-width: 576px) {
+    max-height: 85px;
+    grid-template-columns: 3.5rem 29rem 1fr;
+    grid-template-rows: 1fr;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 100%;
+    max-width: 57rem;
+  }
+
+  &__icon {
+    grid-column: 1;
+    grid-row: 1 / 3;
+
+    @media screen and (min-width: 576px) {
+      padding-bottom: 15px;
+    }
+  }
+
+  &__title {     
+    @include text(14px, normal, 20px, $textColor);
+    margin-left: 1.3rem;
+    align-self: flex-end;
+
+    @media screen and (min-width: 576px) {
+      @include text(18px, 400, 26px, $textColor);
+      align-self: center;
+      margin-left: 1rem;
+    }
+
+    &--bold {
+      font-weight: 500;
+
+      @media screen and (min-width: 576px) {
+        font-weight: 600;
+      }
+
+      &::before {
+        width: 30px;
+        height: 30px;
+        content: "150";
+        
+        @media screen and (min-width: 576px) {
+          content: "50";
+        }
+      }        
+    }
+  }
+
+  &__rating {
+    max-width: 12rem;
+    width: 100%;
+    height: 1.8rem;
+    background: url(./../images/info__feedback-stars.svg) no-repeat top;
+    margin-left: 1.3rem;
+    align-self: flex-start;
+
+    @media screen and (min-width: 576px) {
+      align-self: center;
+      margin-left: 0;
+    }
+  }
+  
+}

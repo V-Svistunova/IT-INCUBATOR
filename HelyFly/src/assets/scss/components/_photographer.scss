@@ -1,0 +1,16 @@
+
+  .photographer {
+    
+    padding-right: 1.5rem;
+
+    @media screen and (min-width: 576px) {
+      padding-right: 0.5rem;
+    }
+    @media screen and (min-width: 768px) {
+      padding-right: 0;
+    }   
+
+    &__img {
+    background: url("./../images/photographer.svg") no-repeat center;
+    }
+  }

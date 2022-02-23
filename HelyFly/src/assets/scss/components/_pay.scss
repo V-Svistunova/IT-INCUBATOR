@@ -1,0 +1,38 @@
+.pay {
+
+  &__list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 8.5rem;
+    width: 100%;
+    padding: 0;
+
+    @media screen and (min-width: 576px) {
+      max-width: 9.8rem;
+    }
+  }
+
+  &__item {
+    display: block;
+    width: 34px;
+    height: 23px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    @media screen and (min-width: 576px) {
+      width: 39px;
+      height: 27px;
+    }
+
+    &-mc {
+      background-image: url(./../images/mcard.png);
+    }
+
+    &-visa {
+      background-image: url(./../images/visa.png);
+    }
+  }
+}
