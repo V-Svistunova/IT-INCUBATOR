@@ -57,22 +57,4 @@
 #### В проекте использовались:
 - **HTML, SCSS, JS**
 - макет разработан в **Figma**, Сcылка на [макет](https://www.figma.com/file/099coFkD3cSvG3OvEu9mMx/HELYFLY-(mob-first)?node-id=0%3A1)
-- Сборщик **Gulp** ( чтобы редактировать код понадобиться предварительно удостовериться что установлены пакеты: 
-```
-  node --version
-  npm --version
-  npx --version 
-```
-далее установить gulp:
-```
-  npm install --global gulp-cli
-```
-далее установим необходимые папки для работы:
-```
-  npm install
-```
-после запускаем gulp:
-```
-  gulp
-```
-)
+- Сборщик **Gulp** 
