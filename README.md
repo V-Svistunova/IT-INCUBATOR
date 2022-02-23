@@ -1,5 +1,5 @@
 ## Deploy webpages:
-- # [Smoothie](https://v-svistunova.github.io/IT-incubator/Smoothie/dist)
+- # [Smoothie](https://v-svistunova.github.io/IT-incubator/Smoothie/dist){:target="_blank"}
 
 ## Folder **Smoothie**
 
