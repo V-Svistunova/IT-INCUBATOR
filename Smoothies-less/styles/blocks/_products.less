@@ -1,0 +1,101 @@
+// main: ./../main.less
+
+
+.products {
+  display: flex;
+  width: 100vw;
+  height: 100%;
+  max-height: 720px;
+}
+
+.products__block {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 12rem;
+  padding-bottom: 8rem;
+}
+
+.products__block {
+
+  &--brown {
+    background-color: #632b17;
+  }
+
+  &--dark-green {
+    background-color: #178670;
+  }
+
+  &--yellow {
+    background-color: #f7ae3b;
+  }
+
+  &--orange {
+    background-color: #c3471b;
+  }
+}
+
+.products__title {
+  font-family: 'Muli-Bold';
+  font-size: 2.4rem;
+  line-height: 0.92;
+  text-align: center;
+}
+
+.products__volume {
+  font-family: 'Muli-Italic';
+  font-size: 2.1rem;
+  line-height: 1.52;
+  color: white;  
+  margin-bottom: 65px;
+}
+
+.products__btn {
+  position: relative;
+  max-width: 20.4rem;
+  max-height: 6rem;
+  text-transform: capitalize;  
+  font-size: 2.1rem;
+  line-height: 1.05;
+  border: solid 2px #ffffff;
+}
+
+.products__btn::after {
+  position: absolute;
+  top: 30%;
+  right: 15%;
+  content: ".";
+  width: 30px;
+  color:transparent;
+  background-image:url(../assets/images/Arrow-white.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+
+@media (max-width: 1200px) {
+
+  .products {
+    overflow-x: scroll;
+    height: 100%;
+  }
+
+  .products__block {
+    min-width: 250px;
+  }
+  
+  .products__title {
+    margin: 10px 20px;
+  }
+}
+
+
+@media (max-width: 568px) { 
+
+  .products__img {
+    width: 40%;
+  }
+}
+
+

@@ -1,0 +1,143 @@
+// main: ./../main.less
+
+
+.reviews {
+  position: relative;
+  width: 100vw;
+  height: 100%;
+  max-height: 770px;
+  padding: 80px 0;
+  display: flex;
+  background-color: #672f1b;
+  background-image: url(../assets/images/reviews_sarah-a.png);
+  background-repeat: no-repeat;
+  background-position: 38% 45%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.reviews::before {
+  position: absolute;
+  content: ".";
+  width: 410px;
+  height: 300px;
+  top: -85px;
+  right: 60px;
+  color:transparent;
+  background-image:url(../assets/images/reviews_dots.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.reviews__title {
+  line-height: 1;
+  letter-spacing: -1px;
+  text-align: center;
+}
+
+.reviews__block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 120px;
+}
+
+.reviews__block-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 455px;  
+  margin-right: 50px;
+}
+
+.reviews__block-text {
+  font-size: 1.8rem;
+  line-height: 1.94;
+  color: #ffffff;
+}
+
+.reviews__block-cite {
+  color: #f7ae3b;
+  font-size: 1.8rem;
+  font-family: 'Muli-BoldItalic';
+  line-height: 2.5;
+}
+
+.reviews__arrow {
+  width: 100%;
+  max-width: 24rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.reviews__arrow-left,
+.reviews__arrow-right {
+  max-width: 11rem;
+  max-height: 3rem;
+  background-color: transparent;
+}
+
+
+
+@media (max-width: 1540px) {
+
+  .reviews::before {
+    display: none;
+  }
+}
+
+
+@media (max-width: 1200px) {
+
+  .reviews {
+    padding-top: 0;
+  }
+}
+
+
+@media (max-width: 1024px) { 
+
+  .reviews__block-content {
+    margin: 50px 10px;
+  }
+}
+
+
+@media (max-width: 768px) { 
+  
+  .reviews {
+    background-size: 80%;
+    background-position: 50% 61%;
+    padding-bottom: 50px;
+    max-height: max-content;
+  }
+
+  .reviews__block {
+    flex-direction: column-reverse;    
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+}
+
+
+@media (max-width: 568px) { 
+
+  .reviews {
+    background-size: 80%;
+    background-position: 50% 50%;
+  }
+
+  .reviews__block {  
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+
+  .reviews__block-avatar {
+    width: 40%;
+  }  
+}
+
+
+
