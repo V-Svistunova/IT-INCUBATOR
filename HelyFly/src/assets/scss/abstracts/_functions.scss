@@ -1,0 +1,11 @@
+
+@for $i from 1 to 9 {
+  .gallery__img-#{$i} {
+    display: block;
+    width: 100%;
+    background-image: url("../images/gallery__img-#{$i}.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:cover;
+  }
+}

@@ -1,0 +1,109 @@
+.gallery {
+  overflow-x: hidden;
+
+  &__title {
+    @include text(26px, 400, 32px, $textColor);
+    max-width: 19rem;
+    width: 100%;
+    text-align: center;
+    margin: 6rem auto 3.2rem;
+
+    @media screen and (min-width: 768px) {
+      @include text(20px, 500, 29px, $textColor);
+      max-width:max-content;      
+      text-align: left;
+      margin: 5.5rem 0 3rem;
+
+      &::after {
+        content: ":";
+        right: 0;
+      }
+    }
+    @media screen and (min-width: 1280px) {
+      @include text(28px, 500, 41px, $textColor);
+      margin: 6.7rem 0 3.7rem;
+    }
+    @media screen and (min-width: 1440px) {
+      @include text(20px, 500, 29px, $textColor);
+      margin: 2.8rem 0 3.7rem;
+    }
+  }
+
+  &__wrapper {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 1.5rem;
+    overflow-x: scroll;
+
+    @media screen and (min-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(4, 1fr);      
+      grid-column-gap: 1rem;
+      grid-row-gap: 1rem;
+      max-width: 56.4rem;
+      overflow: inherit;
+      margin: 0 auto 4.5rem;
+    }
+    @media screen and (min-width: 1280px) {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      max-width:max-content;
+      margin-bottom: 4rem;
+    }
+  }
+
+  &__img {
+    width: 27.7rem;
+    height: 18.5rem;
+  }
+
+  &__box {    
+    display: none;
+    width: 100%;
+    text-align: center;    
+    padding-bottom: 2rem; 
+
+    @media screen and (min-width: 768px) {
+      display: block;
+      border-bottom: 0.5px solid $secondaryColor;
+    }
+  }
+
+  &__btn {
+    position: relative;
+    @include text(17px, 500, 25px, $linkColor);
+    text-align: center;
+
+    @media screen and (min-width: 1280px) {
+      padding-right: 2rem;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 42%;
+      left: -2.1rem;
+      width: 20px; 
+      height: 6px;
+      background: url(./../images/arrow.png) no-repeat center;
+    }
+    
+    &::after {
+      position: absolute;
+      content: "";
+      top: 42%;
+      right: -2.1rem;
+      width: 20px; 
+      height: 6px;
+      background: url(./../images/arrow.png) no-repeat center;
+
+      @media screen and (min-width: 1280px) {
+        right: -0.5rem;
+      }
+    }
+  }
+
+
+}

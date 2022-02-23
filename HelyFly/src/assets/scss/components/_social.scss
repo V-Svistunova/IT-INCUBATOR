@@ -1,0 +1,36 @@
+.social {
+
+    &__list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    max-width: 14rem;
+    width: 100%;
+    
+    @media screen and (min-width: 1280px) {
+      margin-right: 7.6rem; 
+    }
+  }
+
+  &__link {
+    display: block;
+    width: 26px;
+    height: 26px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+
+    &-vk {
+      background-image: url(./../images/vk.png);
+    }
+
+    &-fcb {
+      background-image: url(./../images/facebook.png);
+    }
+
+    &-inst {
+      background-image: url(./../images/instragram.png);
+    }
+  }
+}

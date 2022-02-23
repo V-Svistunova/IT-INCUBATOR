@@ -1,6 +1,10 @@
 ## Deploy webpages:
-
+<<<<<<< HEAD
 - # [Smoothie](https://v-svistunova.github.io/IT-incubator/Smoothie/dist)
+- # [HelyFly](https://v-svistunova.github.io/IT-incubator/HelyFly/dist)
+
+
+
 
 ## Folder **Smoothie**
 
@@ -11,12 +15,32 @@
 - Burger menu, самописанный Slider
 - Плавная прокрутка по блокам на JS
 - Появление и пропадание кнопки Go-top в зависимости от скролла
+=======
+
+
+
+
+## Folder **HelyFly**
+
+#### В проекте реализовано:
+- адаптивная, резиновая, а так же семантическая верстка
+- сайт сделан с попиксельной точностью (pixel perfect)
+- методология БЭМ (от организации файловой системы до правил именования CSS-селекторов)
+- Отзывчивый интерфейс с использованием простых анимаций
+- Яндекс-карта с меткой
+- самописный JS слайдер
+- модальное окно при нажатии на кнопку play и "забронировать место"
+>>>>>>> helyFly
 
 #### В проекте использовались:
 
 - **HTML, SCSS, JS**
+<<<<<<< HEAD
 - макет разработан в **Photoshop**, для удобства использовался сервис **Zeplin**
 Сыллка на [макет](https://drive.google.com/file/d/1NDJvsjjwPKH5mumPfzFR5e4OHhH7Wxo7/view?usp=sharing)
+=======
+- макет разработан в **Figma**, Сcылка на [макет](https://www.figma.com/file/099coFkD3cSvG3OvEu9mMx/HELYFLY-(mob-first)?node-id=0%3A1)
+>>>>>>> helyFly
 - Сборщик **Gulp** ( чтобы редактировать код понадобиться предварительно удостовериться что установлены пакеты: 
 ```
   node --version
