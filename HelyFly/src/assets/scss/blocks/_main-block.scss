@@ -1,0 +1,132 @@
+.main {
+    color: $primaryColor;
+    background-image: url('./../images/main-bg.jpg');
+    background-size: cover;
+    background-position: 62% 0;
+    @media screen and (min-width: 768px){
+        background-position: 56% -180px;
+        background-size: 235%;
+    }
+    @media screen and (min-width: 1280px){
+        background-position: 50% -184px;
+        background-size: 141%;
+    }
+    @media screen and (min-width: 1440px){
+        background-position: 50% -225px;
+        background-size: 134%;
+    }
+    @media screen and (min-width: 1920px){
+        background-position: 50% -225px;
+        background-size: 100%;
+    }
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 655px;
+        @media screen and (min-width: 768px){
+            height: 840px;
+        }
+    }
+    &__title{
+        @include text(32px, 700, 39px, $primaryColor); 
+        max-width: 247px;
+        position: relative;
+        top: -30px;
+        @media screen and (min-width: 576px) {
+            top: -22px;  
+        }
+        @media screen and (min-width: 768px){
+            max-width: 596px;
+            font-size: 40px;
+            line-height: 49px;
+            top: -2px;
+        }
+        @media screen and (min-width: 1280px){
+            max-width: 887px;
+            width: 100%;
+        }
+        span {
+            color: $accentColor;
+        }
+    }
+    &__price-box {
+        height: 86px;
+        width: 204px;
+        background-image: url(./../images/price-box.svg);
+        background-repeat: no-repeat;
+        background-position:center;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        position: relative;
+        top: -19px;
+        left: -5px;
+        @media screen and (min-width: 576px) {
+            top: -11px;
+            left: -5px;
+        }
+        @media screen and (min-width: 768px) {
+            background-image: url(./../images/price-box--762px.svg);
+            height: 98px;
+            width: 230px;
+            top: -8px;
+        }
+    }
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        margin-left: 6px;
+        margin-top: -6px;
+        @media screen and (min-width: 576px) {            
+            margin-top: 0;
+        }
+    }
+    &__price-label{
+        @include text(18px, 400, inherit, inherit);
+        @media screen and (min-width: 768px) {
+            @include text(20px, 400, 150%, inherit);
+        }
+    }
+    &__price {
+        @include text(30px, 800, inherit, inherit);
+        @media screen and (min-width: 768px) {
+            @include text(35px, 800, 150%, inherit);
+            position: relative;
+            top: -8px;
+        }
+    }
+    &__percent {
+        border-radius: 50%;
+        filter: drop-shadow(0px 4px 15px rgba(255, 255, 255, 0.25)) drop-shadow(0px 4px 4px rgba(255, 255, 255, 0.25));
+        max-height: 47px;
+        transform: translateX(4px);
+        @media screen and (min-width: 768px) {
+            max-height: 52px;
+            height: 100%;
+            position: relative;
+            left: -15px;
+            top: -8px;
+        }
+    }
+    &__btn {
+        width: 275px;
+        height: 68px;
+        border: 3px solid $primaryColor;
+        border-radius: 7px;
+        background-color: transparent;
+        @include text(16px, 900, 20px, white); 
+        filter: drop-shadow(0px 4px 70px rgba(255, 255, 255, 0.7)) drop-shadow(0px 4px 4px rgba(255, 255, 255, 0.25));
+        transform: translateY(-6px);
+        @media screen and (min-width: 576px) {
+            position: relative;
+            top: 13px;
+        }
+        @media screen and (min-width: 768px) {
+            @include text(18px, 900, 22px, white); 
+            top: 7px;
+            width: 304px;
+        }
+    }
+}

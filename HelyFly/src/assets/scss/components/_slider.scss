@@ -1,0 +1,76 @@
+.slider {
+
+  &__arrow-left {
+    width: 10px;
+    height: 19px;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0.6;
+    z-index: 4;
+
+    left: 10%;
+    top: 50%;
+    display: block;
+    background: url("./../images/arrow-left.png") no-repeat;
+  
+
+    @media screen and (min-width: 1280px) {
+      display: none;
+    }
+
+    &:hover {
+      opacity: 1.0;
+    }
+  }
+
+  &__arrow-right {
+    width: 10px;
+    height: 19px;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0.6;
+    z-index: 4;
+
+    right: 10%;
+    top: 50%;
+    display: block;
+    background: url("./../images/arrow-right.png") no-repeat;
+  
+    @media screen and (min-width: 1280px) {
+      display: none;
+    }
+
+    &:hover {
+      opacity: 1.0;
+    }
+  }
+
+  
+
+  &__dots {
+    display: flex;
+    justify-content: space-between;
+    width: 52px;
+    height: 10px;
+
+    @media screen and (min-width: 1280px) {
+      display: none;
+    }
+
+    &--white {
+      width: 10px;
+      height: 10px;
+      background: url(./../images/ellipse-white.png) no-repeat center;
+    }
+
+    &--orange {
+      width: 10px;
+      height: 10px;
+      background: url(./../images/ellipse-orange.png) no-repeat center;
+    }
+
+  }
+
+
+
+}
