@@ -1,4 +1,5 @@
-# [desktop project Smoothie](https://v-svistunova.github.io/IT-incubator/Smoothie/dist)
+## Deploy webpages:
+- # [Smoothie](https://v-svistunova.github.io/IT-incubator/Smoothie/dist)
 
 ## Folder **Smoothie**
 
