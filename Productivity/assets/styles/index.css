@@ -164,13 +164,27 @@ body {
     position: absolute;
     bottom: 0;
     left: 0;
-    background: url(/assets/img/main__cloud.svg) no-repeat;
+    background: url(./assets/img/main__cloud.svg) no-repeat;
     background-position: right 80%;
 }
 
 
+.main-svg-circle {
+    position: relative;
+}
+
 .main-svg-circle:hover {
     fill:#6188FF;
+}
+
+.main-svg-circle::after {
+    position: absolute;
+    width: 92px;
+    height: 68px;
+    content: ".";
+    top: 0;
+    left: 0;
+    background-color: black;
 }
 
 .brand__row,
