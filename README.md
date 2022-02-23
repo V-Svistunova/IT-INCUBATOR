@@ -1,6 +1,6 @@
 ## Deploy webpages:
-- # [Smoothie](https://v-svistunova.github.io/IT-incubator/Smoothie/dist)
-- # [HelyFly](https://v-svistunova.github.io/IT-incubator/HelyFly/dist)
+- # [Smoothie](https://v-svistunova.github.io/IT-incubator/Smoothie/dist/)
+- # [HelyFly](https://v-svistunova.github.io/IT-incubator/HelyFly/dist/)
 
 
 
