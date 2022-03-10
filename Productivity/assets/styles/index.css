@@ -370,6 +370,23 @@ body {
     background-color: #F5F8FF;
 }
 
+.resources__subtitle  {
+    font-family: "RobotoMedium";
+    font-size: 10px;    
+    line-height: 12px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    color: #3D4F9F
+}
+
+.resources__title {
+    font-family: "QuicksandMedium";
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    color: #3D4F9F;
+}
+
 .resources__img {
     width: 41rem;
     height: 100vmax;
@@ -383,14 +400,100 @@ body {
     height: 100vh;
     max-width: 958px;
     max-height: 394px;
-    margin: 100px auto;
+    margin: 92px auto;
 }
 
 .resources__inner {
+    background-color: white;
     padding: 64px 35px 64px 40px;
 }
 
+.resources__link-img {
+    fill: white;
+}
 
+.resources__link-img:hover {
+    fill: #9bbbff;
+}
+
+.resources__item-title {
+    font-family: "QuicksandMedium";
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45px;
+    color: #3D4F9F;
+    padding-bottom: 27px;
+}
+
+.resources__item-text {
+    font-family: "RobotoRegular";
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 27px;
+    color: #8D96BD;
+    padding-bottom: 31px;
+}
+
+.resources__item-btns {
+    font-family: "QuicksandMedium";
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.resources__item-btn {
+    color: #A6B6DA;
+    padding: 10px 18px;
+    margin-right: 8px;
+}
+
+.resources__item-btn--active {
+    color: #3A79FF;
+    background-color: #D2E1FF;
+}
+
+
+
+
+
+
+.carousel-control-next {
+    opacity: 1;
+    right: -16%;
+}
+
+.carousel-control-prev-icon {
+    width: 26px;
+    height: 18px;
+    background-image: url('./../img/resources__arrow-left.svg');
+}
+
+.carousel-control-prev {
+    opacity: 1;
+    left: -16%;
+}
+
+.carousel-control-next-icon {
+    width: 26px;
+    height: 18px;
+    background-image: url('./../img/resources__arrow-right.svg');
+}
+
+.carousel-indicators {
+    bottom: -115px;
+}
+
+.carousel-indicators li {
+    width: 8px;
+    height: 8px;
+    background: #D1D6E3;
+    border: none;
+    border-radius: 50%;
+    opacity: 1;
+}
+
+.carousel-indicators .active {
+    background: #5283FF;
+}
 
 
 
