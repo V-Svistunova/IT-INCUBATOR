@@ -478,7 +478,7 @@ body {
     background-image: url('./../img/resources__arrow-right.svg');
 }
 
-.carousel-indicators {
+.resources .carousel-indicators {
     bottom: -115px;
 }
 
@@ -493,6 +493,89 @@ body {
 
 .carousel-indicators .active {
     background: #5283FF;
+}
+
+
+
+
+
+.testimonials {
+    background: linear-gradient(180deg, #EAF0FF 0%, #F6F9FF 100%);
+    padding: 95px 0 180px;
+}
+
+.testimonials__block-1 {
+    width: 100%;
+    max-width: 333px;
+    margin-right: 132px;
+}
+
+.testimonials__block-2 {
+    width: 100%;
+    max-width: 423px;
+}
+
+.testimonials__subtitle {
+    font-family: "RobotoMedium";
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    text-transform: uppercase;
+    color: #3D4F9F;    
+    padding-top: 35px;
+    padding-bottom: 30px;
+    margin: 0;
+}
+
+.testimonials__title {
+    font-family: "QuicksandMedium";
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 45px;
+    color: #3D4F9F;
+    padding-bottom: 14px;
+    margin: 0;
+}
+
+.testimonials__text {
+    font-family: "OpenSans-SemiBold";
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 23px;
+    color: #A4ABC8;
+    letter-spacing: 0.03em;
+}
+
+.testimonials__block-content {
+    position: relative;
+    padding: 35px 65px;
+    margin-bottom: 40px;
+    background: #FFFFFF;
+    border: 1px solid #D8E3FE;
+    box-sizing: border-box;
+    box-shadow: 0px 5px 50px #F3F5FA;
+}
+
+.testimonials__block-text {
+    font-family: "RobotoMedium";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #676F95;
+    margin: 0;
+}
+
+.testimonials .carousel-indicators {
+    bottom: -90px;
+}
+
+.testimonials__block-img {
+    position: absolute;
+    bottom: -31px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
 }
 
 
