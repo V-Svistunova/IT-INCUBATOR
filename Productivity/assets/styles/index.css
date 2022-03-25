@@ -827,3 +827,23 @@ body {
     line-height: 16px;
     color: #FFFFFF;
 }
+
+
+
+
+.footer {
+    padding: 93px 0;        
+    border: 1px solid #ebebeb;
+}
+
+.footer__bottom {
+    font-family: "QuicksandMedium";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.05em;
+    color: #AEB8D0;
+    padding-top: 28px;
+    padding-left: 188px;
+}
