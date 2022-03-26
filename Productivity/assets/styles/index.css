@@ -199,20 +199,18 @@ body {
 
 .app {
     width: 100%;
-    background-color: #F5F8FF;
-}
-
-.app__wrapper {
-    height: 100vh;
-    max-height: 77.6rem;
+    background-color: #F5F8FF;    
     padding: 12rem 0 6rem;
 }
 
-.app__content {
-    padding-left: 262px;
+.app__wrapper {
+    display: flex;
+    justify-content: flex-end
 }
 
 .app__block {
+    width: 100%;
+    max-width: 413px;
     height: max-content;
 }
 
@@ -269,29 +267,38 @@ body {
 .app__imgs {
     position: relative;
     width: 100%;
-    max-width: 653px;
-    height: 450px;
+    max-width: 753px;
+    height: 550px;
     background: url("./../img/app__desktop.png") no-repeat;
     background-position: bottom;
-    background-size: cover;
+    background-size: contain;
 }
 
 .app__img1 {
+    width: 257px;
+    height: 274px;
     position: absolute;
-    left: 10%;
+    left: 7%;
+    top: 13%;
+    background: url("./../img/app__mobile1.png") no-repeat center;
+    background-size: contain;
 }
 
 .app__img2 {
+    width: 300px;
+    height: 280px;
     position: absolute;
-    right: 0;
-    bottom: 0;
+    right: 5%;
+    bottom: 23%;
+    background: url("./../img/app__mobile2.png") no-repeat center;
+    background-size: cover;
 }
 
 
 .about {
     width: 100%;  
     background: url(./../img/about__clouds.png) no-repeat center;
-    background-size: contain;
+    background-size: cover;
 }
 
 .about__container {
@@ -902,16 +909,28 @@ body {
 }
 
 
-
+@media (max-width: 1300px) {
+    .app__imgs {
+        max-width: 653px;
+    }
+}
 
 
 @media (max-width: 1200px) {
-    .app__content {
-        padding-left: 162px;
+
+    .app {   
+        padding: 3rem 0;
     }
 
     .app__imgs {
         max-width: 553px;
+    }
+
+    .app__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 }
 
@@ -919,14 +938,6 @@ body {
 @media (max-width: 1000px) {
     .header {
         padding: 18px 50px;
-    }
-
-    .app__content {
-        padding-left: 62px;
-    }
-
-    .app__imgs {
-        max-width: 453px;
     }
 }
 
@@ -943,12 +954,7 @@ body {
 
     .nav-link {
         padding: 0.5rem 1.5rem 0.5rem 0;
-    }
-
-    .app__wrapper {
-        display: flex;
-        flex-direction: column;
-    }
+    }    
 }
 
 
@@ -1055,6 +1061,21 @@ body {
     .head,
     .head__container {
         max-height: 47rem;
+    }
+
+    .app__imgs {
+        max-height: 400px;
+    }
+
+    .app__img1 {
+        left: 0;
+        width: 140px;
+        height: 200px;
+    }
+
+    .app__img2 {
+        right: 0;
+        width: 100px;
     }
 }
 
