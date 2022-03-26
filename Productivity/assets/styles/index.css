@@ -178,10 +178,15 @@ body {
 }
 
 
-.brand__row,
-.brand {
-    height: 100vh;
-    max-height: 14.5rem;
+.brand__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 37px 0;
+}
+
+.brand__item {
+    margin: 10px 0;
 }
 
 .brand_icon {
