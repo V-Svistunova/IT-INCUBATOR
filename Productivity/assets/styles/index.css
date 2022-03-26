@@ -959,7 +959,7 @@ body {
     }
 
     .header__btn-menu--active::after {
-        width: 62px;
+        width: 42px;
         left: -10px;
         top: 45%;
         transform: rotate(-45deg); 
@@ -967,7 +967,7 @@ body {
 
     .header__btn-menu--active::before {
         left: -10px;
-        width: 62px;
+        width: 42px;
         top: 45%;
         transform: rotate(45deg);
     }
