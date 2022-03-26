@@ -61,14 +61,24 @@ body {
 
 
 
-.header__row {
-    min-height: 8rem;
+.header {
+    padding: 18px 100px;
+}
+
+.header__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .header__logo {
     width: 26px;
     height: 26px;
     background: #5E81FE;
+}
+
+.header__btn-menu {
+    display: none;
 }
 
 .header__nav {
@@ -101,6 +111,12 @@ body {
     border: none;
     margin-left: 1rem;
 }
+
+
+
+
+
+
 
 
 .nav-link {
@@ -684,8 +700,19 @@ body {
 
 
 .plan {    
+    position: relative;
     color: #FFFFFF;
     padding: 80px 0 90px;
+    background: linear-gradient(229.32deg, #6888FF 12.77%, #5E80FF 73.11%);
+}
+
+.plan::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     background: url("./../img/plan--bg.png") no-repeat center;
 }
 
@@ -847,3 +874,102 @@ body {
     padding-top: 28px;
     padding-left: 188px;
 }
+
+
+
+
+
+
+
+
+@media (max-width: 1000px) {
+    .header {
+        padding: 18px 50px;
+    }
+}
+
+@media (max-width: 900px) {
+    .header {
+        padding: 18px 20px;
+    }
+}
+
+@media (max-width: 800px) {
+    .header {
+        padding: 18px 0;
+    }
+
+    .nav-link {
+        padding: 0.5rem 1.5rem 0.5rem 0;
+    }
+}
+
+
+
+@media (max-width: 700px) {
+
+    .header__nav {
+        display: none;
+    }
+    
+    .header__btn-menu {
+        z-index: 11;
+        display: block;
+        position: relative;
+        cursor: pointer;
+        width: 50px;
+        padding: 12px 0;
+        margin-left: 20px;
+        margin-right: 5px;
+        transition: all .7s;
+    }
+
+    .header__btn-menu::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        content: "";
+        width: 40px;
+        height: 3px;
+        background-color: #3D4F9F;
+    }
+
+    .header__btn-menu::before {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        content: "";
+        width: 40px;
+        height: 3px;
+        background-color: #3D4F9F;
+    }
+
+    .header__btn-menu span {
+        display: block;
+        width: 40px;
+        height: 3px;
+        background-color: #3D4F9F;
+    }
+
+
+    .header__btn-menu--active span {
+        height: 0;
+    }
+
+    .header__btn-menu--active::after {
+        width: 62px;
+        left: -10px;
+        top: 45%;
+        transform: rotate(-45deg); 
+    }
+
+    .header__btn-menu--active::before {
+        left: -10px;
+        width: 62px;
+        top: 45%;
+        transform: rotate(45deg);
+    }
+}
+
