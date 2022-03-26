@@ -999,6 +999,30 @@ body {
         font-size: 25px;
         line-height: 73px;
         padding-bottom: 16px;
+    }   
+}
+
+
+@media (max-width: 500px) {
+
+    .head,
+    .head__container {
+        max-height: 47rem;
     }
 }
 
+
+@media (max-width: 400px) {
+
+    .head,
+    .head__container {
+        max-height: 44rem;
+    }
+
+    .head__title {
+        font-weight: 300;
+        font-size: 3.8rem;
+        line-height: 4rem;
+        margin: 0.5rem 0 2rem;
+    }
+}
