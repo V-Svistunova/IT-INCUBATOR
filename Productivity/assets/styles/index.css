@@ -987,13 +987,26 @@ body {
     .nav-link {
         padding: 0.5rem 1.5rem 0.5rem 0;
     }   
+
+    .testimonials {
+        padding: 20px 0 100px;
+    }
     
     .testimonials__block-1,
     .testimonials__block-2  {
         max-width: max-content;
         text-align: center;
         margin-right: 0;
-    }    
+    }   
+    
+    .help {
+        padding: 60px 0;
+    }
+
+    .help__card-body {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 
