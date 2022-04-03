@@ -986,7 +986,14 @@ body {
 
     .nav-link {
         padding: 0.5rem 1.5rem 0.5rem 0;
-    }       
+    }   
+    
+    .testimonials__block-1,
+    .testimonials__block-2  {
+        max-width: max-content;
+        text-align: center;
+        margin-right: 0;
+    }    
 }
 
 
