@@ -971,6 +971,11 @@ body {
     .header {
         padding: 18px 50px;
     }
+
+    .connect__content {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 900px) {
@@ -1110,6 +1115,15 @@ body {
     .carousel-control-prev  {
         opacity: 0;
     }
+
+    .connect {
+        padding: 60px 0;
+    }
+
+    .connect__form {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 
@@ -1133,6 +1147,10 @@ body {
     .app__img2 {
         right: 0;
         width: 100px;
+    }
+
+    .footer__bottom {
+        padding-left: 20px;
     }
 }
 
